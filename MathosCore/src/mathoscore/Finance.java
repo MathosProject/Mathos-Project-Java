@@ -52,14 +52,14 @@ public class Finance {
      * @param round
      * @return
      */
-    public static BigDecimal NetPresentValue(BigDecimal initialInvestment, HashSet<BigDecimal> cashFlow, BigDecimal rateOfReturn)
+/*    public static BigDecimal NetPresentValue(BigDecimal initialInvestment, HashSet<BigDecimal> cashFlow, BigDecimal rateOfReturn)
     {
         //var netPresentValue = initialInvestment*-1 + cashFlow.Select((t, i) => t/DecimalPower(1 + rateOfReturn/100, i + 1)).Sum(temp => round ? Math.Round(temp, 2) : temp);
     	//find a replacement for select.
     	BigDecimal netPresentValue = initialInvestment.multiply(new BigDecimal(1)) + cashFlow.Select ((t, i) -> t/DecimalPower(1 + rateOfReturn/100, i + 1)).Sum(temp -> round ? Math.Round(temp, 2) : temp);
 
         return round ? Math.Round(netPresentValue, 2) : netPresentValue;
-    }
+    }*/
 
     /// <summary>
     /// Calculates the present value of an annuity
@@ -69,13 +69,13 @@ public class Finance {
     /// <param name="numberOfPeriods">Number of periods</param>
     /// <param name="round">Determines whether the result is rounded to 2 decimal places</param>
     /// <returns>Present value of annuity</returns>
-    public static decimal PresentValueOfAnnuity(decimal periodicPayment, decimal ratePerPeriod, int numberOfPeriods, bool round = true)
+/*    public static decimal PresentValueOfAnnuity(decimal periodicPayment, decimal ratePerPeriod, int numberOfPeriods, bool round = true)
     {
         var presentValueOfAnnuity = periodicPayment * ((1 - DecimalPower((1 + ratePerPeriod / 100), numberOfPeriods * -1)) / (ratePerPeriod / 100));
 
         return round ? Math.Round(presentValueOfAnnuity, 2) : presentValueOfAnnuity;
     }
-
+*/
     /// <summary>
     /// Calculates the future value of an annuity
     /// </summary>
@@ -84,7 +84,7 @@ public class Finance {
     /// <param name="numberOfPeriods">Number of periods</param>
     /// <param name="round">Determines whether the result is rounded to 2 decimal places</param>
     /// <returns>Future value of annuity</returns>
-    public static decimal FutureValueOfAnnuity(decimal periodicPayment, decimal ratePerPeriod, int numberOfPeriods, bool round = true)
+/*    public static decimal FutureValueOfAnnuity(decimal periodicPayment, decimal ratePerPeriod, int numberOfPeriods, bool round = true)
     {
         var futureValueOfAnnuity = periodicPayment * ((DecimalPower((1 + ratePerPeriod / 100), numberOfPeriods) - 1) / (ratePerPeriod / 100));
 
@@ -104,7 +104,7 @@ public class Finance {
         var annuityPayment = (presentValue * ratePerPeriod / 100) / (1 - DecimalPower(1 + ratePerPeriod / 100, numberOfPeriods * -1));
 
         return round ? Math.Round(annuityPayment, 2) : annuityPayment;
-    }
+    }*/
 
     /// <summary>
     /// Returns the annuity payment calculated for a future value given the rate and number of periods
@@ -114,7 +114,7 @@ public class Finance {
     /// <param name="numberOfPeriods">Number of periods</param>
     /// <param name="round">Determines whether the result is rounded to 2 decimal places</param>
     /// <returns></returns>
-    public static decimal AnnuityPaymentFutureValue(decimal futureValue, decimal ratePerPeriod, int numberOfPeriods, bool round = true)
+/*    public static decimal AnnuityPaymentFutureValue(decimal futureValue, decimal ratePerPeriod, int numberOfPeriods, bool round = true)
     {
         var annuityPayment = (futureValue * ratePerPeriod / 100) / (DecimalPower(1 + ratePerPeriod / 100, numberOfPeriods) - 1);
 
@@ -135,7 +135,7 @@ public class Finance {
         var remaining = FutureValue(originalValue, ratePerPeriod, numberOfPeriods, false) - FutureValueOfAnnuity(payment, ratePerPeriod, numberOfPeriods, false);
 
         return round ? Math.Round(remaining, 2) : remaining;
-    }
+    }*/
 
     /**
      * Calculates the value of a decimal raised to an integer value
@@ -166,4 +166,4 @@ public class Finance {
         return negativePower ? new BigDecimal(1).divide(result) : result;
     }
 }
-}
+
