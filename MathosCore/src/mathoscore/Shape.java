@@ -41,18 +41,25 @@ public class Shape {
 	{
 		String output = "";
 		
-		int[] board = new int[512];
+		int[][]board = new int[50][50];
 		
 		for(SingleVariableFunction y :  yFunctions)
 		{
 			for (int i = y.getLowerBound(); i < y.getUpperBound(); i++) {
-				board[(y.getFunction().apply(new Double(i))).intValue()] = 1;
+				board[i][(y.getFunction().apply(new Double(i))).intValue()] = 1;
 			}
 		}
 		
 		
+		for (int i = 0; i < board.length; i++) {
+			String temp = "";
+			for (int j = 0; j < board[i].length; j++) {
+				temp += board[i][j];
+			}
+			System.out.println(temp);
+			temp = "";
+		}
 		
-		
-		return output;
+		return  "";
 	}
 }
