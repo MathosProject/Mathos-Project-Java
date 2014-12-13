@@ -1,6 +1,7 @@
 package mathoscore;
 
 import java.math.BigDecimal;
+import java.util.HashSet;
 
 public class Finance {
 
@@ -42,9 +43,20 @@ public class Finance {
     /// <param name="rateOfReturn">Expected rate of return (ex 5 for 5%)</param>
     /// <param name="round">Determines whether the result is rounded to 2 decimal places</param>
     /// <returns>Net present value</returns>
-    public static decimal NetPresentValue(decimal initialInvestment, IList<decimal> cashFlow, decimal rateOfReturn, bool round = true)
+    
+    /**
+     * 
+     * @param initialInvestment
+     * @param cashFlow
+     * @param rateOfReturn
+     * @param round
+     * @return
+     */
+    public static BigDecimal NetPresentValue(BigDecimal initialInvestment, HashSet<BigDecimal> cashFlow, BigDecimal rateOfReturn)
     {
-        var netPresentValue = initialInvestment*-1 + cashFlow.Select((t, i) => t/DecimalPower(1 + rateOfReturn/100, i + 1)).Sum(temp => round ? Math.Round(temp, 2) : temp);
+        //var netPresentValue = initialInvestment*-1 + cashFlow.Select((t, i) => t/DecimalPower(1 + rateOfReturn/100, i + 1)).Sum(temp => round ? Math.Round(temp, 2) : temp);
+    	//find a replacement for select.
+    	BigDecimal netPresentValue = initialInvestment.multiply(new BigDecimal(1)) + cashFlow.Select ((t, i) -> t/DecimalPower(1 + rateOfReturn/100, i + 1)).Sum(temp -> round ? Math.Round(temp, 2) : temp);
 
         return round ? Math.Round(netPresentValue, 2) : netPresentValue;
     }
