@@ -1,7 +1,6 @@
 package mathoscore;
 
 import java.math.BigDecimal;
-import java.util.HashSet;
 
 public class Finance {
 
@@ -10,15 +9,12 @@ public class Finance {
 	 * @param presentValue Present value (ex 100).
 	 * @param rateOfReturn Rate of return (ex 6 for 6%)
 	 * @param numberOfPeriods Number of periods
-	 * @param round Determines whether the result is rounded to 2 decimal places
 	 * @return Future value
 	 */
     public static BigDecimal FutureValue(BigDecimal presentValue, BigDecimal rateOfReturn, int numberOfPeriods)
     {
     	//removed the rounding option. To round, use BigDecimal.Round
-        BigDecimal futureValue = presentValue.multiply( DecimalPower(( new BigDecimal (1).add( rateOfReturn.divide( new BigDecimal(100))) ), numberOfPeriods));
-        
-        return futureValue;
+        return presentValue.multiply( DecimalPower(( new BigDecimal (1).add( rateOfReturn.divide( new BigDecimal(100))) ), numberOfPeriods));
     }
     
     /**
@@ -30,9 +26,7 @@ public class Finance {
      */
     public static BigDecimal PresentValue(BigDecimal futureValue, BigDecimal rateOfReturn, int numberOfPeriods)
     {
-        BigDecimal presentValue = futureValue.divide( DecimalPower((new BigDecimal(1).add( rateOfReturn.divide(new BigDecimal(100)))), numberOfPeriods));
-        
-        return presentValue;
+        return futureValue.divide( DecimalPower((new BigDecimal(1).add( rateOfReturn.divide(new BigDecimal(100)))), numberOfPeriods));
     }
 
     /// <summary>

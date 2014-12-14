@@ -1,11 +1,8 @@
 package mathoscore;
 
-
 import java.util.HashSet;
-import java.util.function.*;
 
 public class Shape {
-	
 	//note, Doubles are mutable below.
 	private HashSet<SingleVariableFunction> yFunctions;
 	private HashSet<SingleVariableFunction> xFunctions;
@@ -17,7 +14,7 @@ public class Shape {
 	
 	/**
 	 * Sets the Y functions
-	 * @param yFunctions
+	 * @param yFunctions The new y functions
 	 */
 	public void setY(HashSet<SingleVariableFunction> yFunctions)
 	{
@@ -26,7 +23,7 @@ public class Shape {
 	
 	/**
 	 * Sets the X functions
-	 * @param xFunctions
+	 * @param xFunctions The new x functions
 	 */
 	public void setX(HashSet<SingleVariableFunction> xFunctions)
 	{
@@ -46,17 +43,20 @@ public class Shape {
 		for(SingleVariableFunction y :  yFunctions)
 		{
 			for (int i = y.getLowerBound(); i < y.getUpperBound(); i++) {
-				board[i][(y.getFunction().apply(new Double(i))).intValue()] = 1;
+				board[i][(y.getFunction().apply((double) i)).intValue()] = 1;
 			}
 		}
-		
-		
-		for (int i = 0; i < board.length; i++) {
+
+
+		for (int[] aBoard : board) {
 			String temp = "";
-			for (int j = 0; j < board[i].length; j++) {
-				temp += board[i][j];
+
+			for (int anABoard : aBoard) {
+				temp += anABoard;
 			}
+
 			System.out.println(temp);
+
 			temp = "";
 		}
 		
