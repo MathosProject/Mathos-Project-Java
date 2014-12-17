@@ -18,7 +18,7 @@ public class MathosCoreTests {
 	public void ShapeTest() {
 		Shape s = new Shape();
 		HashSet<SingleVariableFunction> hs = new HashSet<>();
-		hs.add(new SingleVariableFunction(x->2*x, new int[]{1,10}));
+		hs.add(new SingleVariableFunction(x->2*x, 1, 2));
 		s.setY(hs);
 		
 		System.out.println(s.discreteDraw());
