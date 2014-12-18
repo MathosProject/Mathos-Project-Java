@@ -92,7 +92,7 @@ public enum Ternary {
 	
 	/**
 	 * Performs the AND operation.
-	 * @param secondParameter
+	 * @param secondParameter.
 	 * @return TRUE and UNKNOWN -> UNKNOWN, FALSE and UNKNOWN -> FALSE, UNKNOWN and UNKNOWN -> UNKNOWN. In all other cases, usual boolean logic is applied.
 	 */
 	public Ternary And(Ternary secondParameter)
@@ -117,7 +117,7 @@ public enum Ternary {
 	
 	/**
 	 * Performs the OR operation.
-	 * @param secondParameter
+	 * @param secondParameter.
 	 * @return TRUE and UNKNOWN -> TRUE, FALSE and UNKNOWN -> UNKNOWN, UNKNOWN and UNKNOWN -> UNKNOWN. In all other cases, usual boolean logic is applied.
 	 */
 	public Ternary Or(Ternary secondParameter)
@@ -142,7 +142,7 @@ public enum Ternary {
 	
 	/**
 	 * Performs the XOR operation.
-	 * @param secondParameter
+	 * @param secondParameter.
 	 * @return TRUE and UNKNOWN -> UNKNOWN, FALSE and UNKNOWN -> UNKNOWN, UNKNOWN and UNKNOWN -> UNKNOWN. In all other cases, usual boolean logic is applied.
 	 */
 	public Ternary Xor(Ternary secondParameter)
