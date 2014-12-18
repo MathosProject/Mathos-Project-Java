@@ -21,10 +21,7 @@ public enum Ternary {
 	 */
 	public boolean ToBoolean()
 	{
-		if(this == TRUE)
-			return true;
-		else
-			return false;
+		return this == TRUE;
 	}
 	
 	/**
@@ -92,16 +89,16 @@ public enum Ternary {
 	
 	/**
 	 * Performs the AND operation.
-	 * @param secondParameter.
+	 * @param secondParameter Second parameter to compare to
 	 * @return TRUE and UNKNOWN -> UNKNOWN, FALSE and UNKNOWN -> FALSE, UNKNOWN and UNKNOWN -> UNKNOWN. In all other cases, usual boolean logic is applied.
 	 */
 	public Ternary And(Ternary secondParameter)
 	{
 		if(this == UNKNOWN || secondParameter == UNKNOWN)
 		{
-			if(this == TRUE && secondParameter == UNKNOWN || (this == UNKNOWN && secondParameter == TRUE))
+			if(this == TRUE || (this == UNKNOWN && secondParameter == TRUE))
 				return UNKNOWN;
-			else if(this == FALSE && secondParameter == UNKNOWN || (this == UNKNOWN && secondParameter == FALSE))
+			else if(this == FALSE || (this == UNKNOWN && secondParameter == FALSE))
 				return FALSE;
 			else if (this == UNKNOWN && secondParameter == UNKNOWN)
 				return UNKNOWN;
@@ -117,16 +114,16 @@ public enum Ternary {
 	
 	/**
 	 * Performs the OR operation.
-	 * @param secondParameter.
+	 * @param secondParameter Second parameter to compare to
 	 * @return TRUE and UNKNOWN -> TRUE, FALSE and UNKNOWN -> UNKNOWN, UNKNOWN and UNKNOWN -> UNKNOWN. In all other cases, usual boolean logic is applied.
 	 */
 	public Ternary Or(Ternary secondParameter)
 	{
 		if(this == UNKNOWN || secondParameter == UNKNOWN)
 		{
-			if(this == TRUE && secondParameter == UNKNOWN || (this == UNKNOWN && secondParameter == TRUE))
+			if(this == TRUE || (this == UNKNOWN && secondParameter == TRUE))
 				return TRUE;
-			else if(this == FALSE && secondParameter == UNKNOWN || (this == UNKNOWN && secondParameter == FALSE))
+			else if(this == FALSE || (this == UNKNOWN && secondParameter == FALSE))
 				return UNKNOWN;
 			else if (this == UNKNOWN && secondParameter == UNKNOWN)
 				return UNKNOWN;
@@ -142,16 +139,16 @@ public enum Ternary {
 	
 	/**
 	 * Performs the XOR operation.
-	 * @param secondParameter.
+	 * @param secondParameter Second parameter to compare to
 	 * @return TRUE and UNKNOWN -> UNKNOWN, FALSE and UNKNOWN -> UNKNOWN, UNKNOWN and UNKNOWN -> UNKNOWN. In all other cases, usual boolean logic is applied.
 	 */
 	public Ternary Xor(Ternary secondParameter)
 	{
 		if(this == UNKNOWN || secondParameter == UNKNOWN)
 		{
-			if(this == TRUE && secondParameter == UNKNOWN || (this == UNKNOWN && secondParameter == TRUE))
+			if(this == TRUE || (this == UNKNOWN && secondParameter == TRUE))
 				return UNKNOWN;
-			else if(this == FALSE && secondParameter == UNKNOWN || (this == UNKNOWN && secondParameter == FALSE))
+			else if(this == FALSE || (this == UNKNOWN && secondParameter == FALSE))
 				return UNKNOWN;
 			else if (this == UNKNOWN && secondParameter == UNKNOWN)
 				return UNKNOWN;

@@ -36,7 +36,7 @@ public class MutableBoolean {
 	
 	/**
 	 * Sets a new value for the bool.
-	 * @param newBool
+	 * @param newBool The new value
 	 */
 	public void setValue(boolean newBool)
 	{

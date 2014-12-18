@@ -38,7 +38,7 @@ public final class SingleVariableFunction {
 	
 	/**
 	 * Gets the lower bound for the function.
-	 * @return
+	 * @return The lower bound
 	 */
 	public int getLowerBound()
 	{
@@ -47,7 +47,7 @@ public final class SingleVariableFunction {
 	
 	/**
 	 * Gets the upper bound for the function.
-	 * @return
+	 * @return The upper bound
 	 */
 	public int getUpperBound()
 	{
