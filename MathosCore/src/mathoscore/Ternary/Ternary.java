@@ -8,12 +8,7 @@ public enum Ternary {
 	UNKNOWN(0),
 	FALSE(-1);
 	
-	private int val;
-	
-	private Ternary(int val)
-	{
-		this.val = val;
-	}
+	private Ternary(int val) {}
 	
 	/**
 	 * Converts a Ternary object to a boolean (either "true" or "false"), without the "unknown" case.
@@ -35,6 +30,22 @@ public enum Ternary {
 			return TRUE;
 		else
 			return FALSE;
+	}
+	
+	public Number GetNumber()
+	{
+		switch (this) {
+		case TRUE:
+			return 1;
+		case UNKNOWN:
+			return 0;
+		case FALSE:
+			return -1;
+
+		default:
+			//should never occur
+			return -1;
+		}
 	}
 	
 	/**
