@@ -95,13 +95,13 @@ public final class SingleVariableFunction {
 		}
 		
 		throw new NotFoundException("No roots could be found in the given interval.");
-		
     }
+
 	private int sign(double x) 
 	{
 		return (x < 0.0) ? -1 : (x > 0.0) ? 1 : 0;
 	}
 
-	
-	
+
+
 }
