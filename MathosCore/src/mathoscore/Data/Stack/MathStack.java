@@ -11,6 +11,9 @@ import mathoscore.Exceptions.StackEmptyException;
 public class MathStack extends Stack<Integer> {
 
 	// we could use Stack<Number> but that would require explicit definitions of each number type (of operators).
+	/**
+	 * Creates a new instance of MathStack.
+	 */
 	public MathStack()
 	{
 		super();
@@ -39,7 +42,7 @@ public class MathStack extends Stack<Integer> {
 	}
 	
 	/**
-	 * Multiplies all values in the stack.
+	 * Multiplies the recent two values in the stack.
 	 * @throws StackEmptyException
 	 */
 	public void mul() throws StackEmptyException
