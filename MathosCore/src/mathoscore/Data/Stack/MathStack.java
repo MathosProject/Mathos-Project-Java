@@ -3,6 +3,7 @@ package mathoscore.Data.Stack;
 /**
  * A stack that can only contain integers. This is an extension of Stack class. All methods have the time complexity of O(1).
  * @author Artem Los
+ * @version 2015.02.06
  *
  */
 public class MathStack extends Stack<Integer> {

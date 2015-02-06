@@ -5,6 +5,7 @@ package mathoscore.Data.Stack;
  * @author Artem Los
  *
  * @param <T> The type to be stored in the Stack.
+ * @version 2015.02.06
  */
 public interface IStack<T> {
 	

@@ -6,7 +6,7 @@ import java.io.StringWriter;
  * A singly linked list.
  * 
  * @author Artem Los (artem@artemlos.net)
- * @version
+ * @version 2015.02.06
  */
 public class LinkedList<T> { 
     private ListElement<T> first;   // First element in list.

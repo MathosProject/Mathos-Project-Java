@@ -12,7 +12,7 @@ import mathoscore.Data.Stack.*;
  * be separated by whitespace.
  *
  * @author  Artem Los (artem@artemlos.net)
- * @version 2013-02-01
+ * @version 2015.02.06
  */
 public class Postfix {
 	/**

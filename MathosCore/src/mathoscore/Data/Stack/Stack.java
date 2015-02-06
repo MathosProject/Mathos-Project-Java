@@ -7,6 +7,7 @@ import java.io.StringWriter;
  * @author Artem Los
  *
  * @param <T>
+ * @version 2015.02.06
  */
 public class Stack<T> implements IStack<T>
 {
