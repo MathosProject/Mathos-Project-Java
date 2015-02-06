@@ -22,8 +22,7 @@ public class Postfix {
 	 * 
 	 * @param expr  Arithmetic expression in postfix notation
 	 * @return      The value of the evaluated expression
-	 * @throws StackEmptyException 
-	 * @throws      A subclass of RuntimeException if the expression is wrong
+	 * @throws StackEmptyException, InvalidExpressionException.
 	 */
 	public static int evaluate(String expr) throws InvalidExpressionException, StackEmptyException {
 		// TODO
