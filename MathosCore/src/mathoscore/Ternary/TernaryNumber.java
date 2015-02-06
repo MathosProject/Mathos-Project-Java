@@ -15,7 +15,7 @@ public class TernaryNumber {
 		
 		for (int i = 0; i < value.length; i++) {
 			//this should be fixed.
-			num += value[value.length-i+1].GetNumber().doubleValue() * PowThree(i).doubleValue();
+			//num += value[value.length-i+1].GetNumber().doubleValue() * PowThree(i).doubleValue();
 		}
 		
 		return num;
