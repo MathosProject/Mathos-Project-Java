@@ -1,4 +1,4 @@
-package mathoscore.Data;
+package mathoscore.Data.Stack;
 
 /**
  * A stack that can only contain integers. This is an extension of Stack class. All methods have the time complexity of O(1).

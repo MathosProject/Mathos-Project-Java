@@ -1,4 +1,4 @@
-package mathoscore.Data;
+package mathoscore.Data.Stack;
 
 /**
  * A stack data structure that has O(1) time complexity on all methods.  

@@ -1,4 +1,4 @@
-package mathoscore.Data;
+package mathoscore.Data.Stack;
 
 import java.io.StringWriter;
 

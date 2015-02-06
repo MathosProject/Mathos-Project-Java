@@ -1,4 +1,4 @@
-package mathoscore.Data;
+package mathoscore.Data.Stack;
 
 import static org.junit.Assert.*;
 
