@@ -1,6 +1,9 @@
-package mathoscore.Data.Stack;
+package Tests.Data;
 
 import static org.junit.Assert.*;
+import mathoscore.Data.Stack.MathStack;
+import mathoscore.Data.Stack.Stack;
+import mathoscore.Data.Stack.StackEmptyException;
 
 import org.junit.Test;
 
