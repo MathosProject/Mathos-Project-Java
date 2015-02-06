@@ -1,5 +1,7 @@
 package mathoscore.Postfix;
 import mathoscore.Data.Stack.*;
+import mathoscore.Exceptions.InvalidExpressionException;
+import mathoscore.Exceptions.StackEmptyException;
 
 /**
  * The Postfix class implements an evaluator for integer postfix expressions.

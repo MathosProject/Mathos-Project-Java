@@ -1,6 +1,8 @@
-package mathoscore.Postfix;
+package Tests.Postfix;
 import mathoscore.Data.Stack.*;
-
+import mathoscore.Exceptions.InvalidExpressionException;
+import mathoscore.Exceptions.StackEmptyException;
+import mathoscore.Postfix.Postfix;
 import static org.junit.Assert.*;
 
 import org.junit.Before;

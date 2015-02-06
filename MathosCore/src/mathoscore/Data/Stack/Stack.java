@@ -2,11 +2,13 @@ package mathoscore.Data.Stack;
 
 import java.io.StringWriter;
 
+import mathoscore.Exceptions.StackEmptyException;
+
 /**
  * An implementation of the IStack interface. All methods have the time complexity of O(1).
- * @author Artem Los
+ * @author Artem Los (artem@artemlos.net)
  *
- * @param <T>
+ * @param <T> The type to be stored in the Stack.
  * @version 2015.02.06
  */
 public class Stack<T> implements IStack<T>
