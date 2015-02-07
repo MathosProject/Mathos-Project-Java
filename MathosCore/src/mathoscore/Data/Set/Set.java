@@ -14,35 +14,64 @@ import java.util.List;
  * @version 2015.02.06
  */
 public class Set<T> {
-    public List<T> Elements;
+    public final List<T> Elements;
 
+    /**
+     * Creates an empty set
+     */
     public Set() {
         Elements = new ArrayList<>();
     }
 
+    /**
+     * Creates a set from another set
+     * @param s Set to copy from
+     */
     public Set(Set<T> s) {
         Elements = s.Elements;
     }
 
+    /**
+     * Creates a set that contains the given elements
+     * @param elems Elements to contain
+     */
     @SafeVarargs
     public Set(T... elems) {
         Elements = new ArrayList<>();
         Elements.addAll(Arrays.asList(elems));
     }
 
+    /**
+     * Add an element to the set
+     * @param element Element to add
+     */
     public void add(T element) {
         Elements.add(element);
     }
 
+    /**
+     * Add multiple elements to the set
+     * @param elements Elements to add
+     */
     @SafeVarargs
     public final void add(T... elements) {
         Collections.addAll(Elements, elements);
     }
 
+    /**
+     * Is the current set a subset of b
+     * @param b Parent set
+     * @return Current Set ⊆ b
+     */
     public boolean isSubset(Set<T> b) {
         return b.Elements.containsAll(Elements);
     }
 
+    /**
+     * Is the current set a proper subset of b
+     * @param b Parent set
+     * @return Current Set ⊂ b
+     */
     public boolean isProperSubset(Set<T> b) {
         boolean proper = false;
         boolean missed = false;
@@ -59,6 +88,11 @@ public class Set<T> {
         return proper;
     }
 
+    /**
+     * Get the union of the current set and b
+     * @param b Second set
+     * @return Current Set ∪ b
+     */
     public Set<T> union(Set<T> b) {
         List<T> ret = new ArrayList<>();
 
@@ -75,6 +109,11 @@ public class Set<T> {
         return new Set<>((T[]) ret.stream().toArray(Object[]::new));
     }
 
+    /**
+     * Get the intersection of the current set and b
+     * @param b Second set
+     * @return Current Set ∩ b
+     */
     public Set<T> intersection(Set<T> b) {
         List<T> ret = new ArrayList<>();
 
