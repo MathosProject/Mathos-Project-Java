@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * An implementation of a mathematical set.
@@ -96,15 +97,8 @@ public class Set<T> {
     public Set<T> union(Set<T> b) {
         List<T> ret = new ArrayList<>();
 
-        for(T elem : Elements) {
-            if(!ret.contains(elem))
-                ret.add(elem);
-        }
-
-        for(T elem : b.Elements) {
-            if(!ret.contains(elem))
-                ret.add(elem);
-        }
+        Elements.stream().filter(elem -> !ret.contains(elem)).forEach(ret::add);
+        b.Elements.stream().filter(elem -> !ret.contains(elem)).forEach(ret::add);
 
         return new Set<>((T[]) ret.stream().toArray(Object[]::new));
     }
@@ -119,6 +113,21 @@ public class Set<T> {
 
         ret.addAll(Elements);
         ret.retainAll(b.Elements);
+
+        return new Set<>((T[]) ret.stream().toArray(Object[]::new));
+    }
+
+    /**
+     * Get the symmetric difference of the current set and b
+     * @param b Second set
+     * @return Current Set △ b
+     */
+    public Set<T> symmetric(Set<T> b) {
+        List<T> ret = new ArrayList<>();
+        List<T> inter = intersection(b).Elements;
+
+        ret.addAll(Elements.stream().filter(elem -> !inter.contains(elem)).collect(Collectors.toList()));
+        ret.addAll(b.Elements.stream().filter(elem -> !inter.contains(elem)).collect(Collectors.toList()));
 
         return new Set<>((T[]) ret.stream().toArray(Object[]::new));
     }

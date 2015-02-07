@@ -40,4 +40,12 @@ public class SetTest {
 
         a.intersection(b).Elements.forEach(System.out::println);
     }
+
+    @Test
+    public void symmetricTest() {
+        Set<Integer> a = new Set<>(1, 2, 3);
+        Set<Integer> b = new Set<>(3, 4);
+
+        a.symmetric(b).Elements.forEach(System.out::println);
+    }
 }
