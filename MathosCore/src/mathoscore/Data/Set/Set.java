@@ -39,6 +39,26 @@ public class Set<T> {
         Collections.addAll(Elements, elements);
     }
 
+    public boolean isSubset(Set<T> b) {
+        return b.Elements.containsAll(Elements);
+    }
+
+    public boolean isProperSubset(Set<T> b) {
+        boolean proper = false;
+        boolean missed = false;
+
+        for(T elem : Elements) {
+            if(b.Elements.contains(elem))
+                proper = true;
+            else if(missed)
+                return false;
+            else
+                missed = true;
+        }
+
+        return proper;
+    }
+
     public Set<T> union(Set<T> b) {
         List<T> ret = new ArrayList<>();
 
