@@ -4,3 +4,4 @@
 * math game
 * chemistry eq. balancer (using technique described in *Elementary Linear Algebra*, section 1.8)
 * math sets (set theory, http://en.wikipedia.org/wiki/Set_theory)
+* vector, scalar, and quaternion
