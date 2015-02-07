@@ -1,8 +1,8 @@
 package mathoscore.Data.Stack;
 
-import java.io.StringWriter;
-
 import mathoscore.Exceptions.StackEmptyException;
+
+import java.io.StringWriter;
 
 /**
  * An implementation of the IStack interface. All methods have the time complexity of O(1).
@@ -44,7 +44,7 @@ public class Stack<T> implements IStack<T>
 	 * @param o The object to add on top of the stack.
 	 */
 	public void push(T o) {
-        ListElement<T> newElement = new ListElement<T>(o);
+        ListElement<T> newElement = new ListElement<>(o);
         
         if(first == null)
         {
@@ -117,10 +117,7 @@ public class Stack<T> implements IStack<T>
 	 */
 	public boolean isEmpty() {
 		// TODO Auto-generated method stub
-		if(size == 0)
-			return true;
-		else
-			return false;
+        return size == 0;
 	}
 	
     /**

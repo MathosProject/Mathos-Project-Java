@@ -1,5 +1,6 @@
 package mathoscore.Postfix;
-import mathoscore.Data.Stack.*;
+
+import mathoscore.Data.Stack.MathStack;
 import mathoscore.Exceptions.InvalidExpressionException;
 import mathoscore.Exceptions.StackEmptyException;
 
@@ -30,47 +31,38 @@ public class Postfix {
 		String[] tokens = expr.split("\\s+");
 		
 		MathStack stack = new MathStack();
-		
-		for (int i = 0; i < tokens.length; i++) {
-			
-			if(isInteger(tokens[i]))
-			{
-				try
-				{
-					stack.push(Integer.parseInt(tokens[i]));
-				}
-				catch(Exception e)
-				{
-					throw new InvalidExpressionException();
-				}
-			}
-			else if(isOperator(tokens[i]))
-			{
-				switch (tokens[i]) {
-				case "+":
-					stack.add();
-					break;
-				case "-":
-					stack.sub();
-					break;
-				case "*":
-					stack.mul();
-					break;
-				case "/":
-					stack.div();
-					break;
-				default:
-					break;
-				}
-			}
-			else
-			{
-				if(!tokens[i].matches("(\\s)?(\\t)?"))
-				{
-					throw new InvalidExpressionException();
-				}
-			}
-		}
+
+        for (String token : tokens) {
+
+            if (isInteger(token)) {
+                try {
+                    stack.push(Integer.parseInt(token));
+                } catch (Exception e) {
+                    throw new InvalidExpressionException();
+                }
+            } else if (isOperator(token)) {
+                switch (token) {
+                    case "+":
+                        stack.add();
+                        break;
+                    case "-":
+                        stack.sub();
+                        break;
+                    case "*":
+                        stack.mul();
+                        break;
+                    case "/":
+                        stack.div();
+                        break;
+                    default:
+                        break;
+                }
+            } else {
+                if (!token.matches("(\\s)?(\\t)?")) {
+                    throw new InvalidExpressionException();
+                }
+            }
+        }
 		
 		if(stack.size() == 1)
 		{

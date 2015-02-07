@@ -36,33 +36,27 @@ public class LinkedList<T> {
      *   <li> last.next == null. </li>
      * </ul>
      */
-    public boolean isHealthy() {  	
-    	
-    	ListElement<T> current = first;
-    	int counter = 0;
-    	
-    	while(current != null && current.data != null)
-    	{
-    		current = current.next;
-    		counter++;
-    	}
-    	
-    	if(size != counter)
-    	{
-    		return false;
-    	}
-    	
-    	
-    	if(last != null && last.next != null)
-    		return false;
-    	if(size == 0)
-    		return (first == null && last == null);
-    	if(size > 0)
-    		return (first != null && last != null);
-    	if(size == 1)
-    		return  (first == last);
-    	
-    	return false;
+    public boolean isHealthy() {
+        ListElement<T> current = first;
+        int counter = 0;
+
+        while (current != null && current.data != null) {
+            current = current.next;
+            counter++;
+        }
+
+        if (size != counter) {
+            return false;
+        }
+
+        if (last != null && last.next != null)
+            return false;
+        if (size == 0)
+            return (first == null && last == null);
+        if (size > 0)
+            return (last != null);
+
+        return size == 1 && (first == last);
     }
     
     /**
@@ -80,7 +74,7 @@ public class LinkedList<T> {
      */
     public void addFirst(T element) {
         
-        ListElement<T> newElement = new ListElement<T>(element);
+        ListElement<T> newElement = new ListElement<>(element);
         
         if(first == null)
         {
@@ -100,7 +94,7 @@ public class LinkedList<T> {
      */
     public void addLast(T element) {
 
-    	ListElement<T> newElement = new ListElement<T>(element);
+    	ListElement<T> newElement = new ListElement<>(element);
         
         if(last == null)
         {
@@ -208,10 +202,7 @@ public class LinkedList<T> {
      * Returns <code>true</code> if this list contains no elements.
      */
     public boolean isEmpty() {
-        if(size == 0)
-        	return true;
-        else
-        	return false;
+        return size == 0;
     }
 
     /**
