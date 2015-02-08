@@ -35,6 +35,7 @@ public class LinkedList<T> {
      *   <li> if size == 1, first == last, </li>
      *   <li> last.next == null. </li>
      * </ul>
+     * This method is O(n).
      */
     public boolean isHealthy() {
         ListElement<T> current = first;
@@ -60,7 +61,7 @@ public class LinkedList<T> {
     }
     
     /**
-     * Creates an empty list.
+     * Creates an empty list. This method is O(1).
      */
     public LinkedList() {
 
@@ -70,7 +71,8 @@ public class LinkedList<T> {
     }
 
     /**
-     * Inserts the given element at the beginning of this list.
+     * Inserts the given element at the beginning of this list. This method is O(1).
+     * @param element Add this element.
      */
     public void addFirst(T element) {
         
@@ -90,7 +92,8 @@ public class LinkedList<T> {
     }
 
     /**
-     * Inserts the given element at the end of this list.
+     * Inserts the given element at the end of this list. This method is O(1).
+     * @param element Add this element.
      */
     public void addLast(T element) {
 
@@ -111,7 +114,7 @@ public class LinkedList<T> {
     }
 
     /**
-     * Returns the first element of this list.
+     * Returns the first element of this list. This method is O(1).
      * Returns <code>null</code> if the list is empty.
      */
     public T getFirst() {
@@ -123,8 +126,8 @@ public class LinkedList<T> {
     }
 
     /**
-     * Returns the last element of this list.
-     * Returns <code>null</code> if the list is empty.
+     * Returns the last element of this list. This method is O(1).
+     * @return Returns <code>null</code> if the list is empty.
      */
     public T getLast() {
         // TODO
@@ -136,8 +139,8 @@ public class LinkedList<T> {
     }
 
     /**
-     * Returns the element at the specified position in this list.
-     * Returns <code>null</code> if <code>index</code> is out of bounds.
+     * Returns the element at the specified position in this list. This method is O(n).
+     * @return Returns <code>null</code> if <code>index</code> is out of bounds.
      */
     public T get(int index) {
         
@@ -159,8 +162,8 @@ public class LinkedList<T> {
     }
 
     /**
-     * Removes and returns the first element from this list.
-     * Returns <code>null</code> if the list is empty.
+     * Removes and returns the first element from this list. This method is O(1).
+     * @return Returns <code>null</code> if the list is empty.
      */
     public T removeFirst() {
         
@@ -181,7 +184,7 @@ public class LinkedList<T> {
     }
 
     /**
-     * Removes all of the elements from this list.
+     * Removes all of the elements from this list. This method is O(1).
      */
     public void clear() {
     	
@@ -191,7 +194,8 @@ public class LinkedList<T> {
     }
 
     /**
-     * Returns the number of elements in this list.
+     * Returns the number of elements in this list. This method is O(1).
+     * @return The size.
      */
     public int size() {
         // TODO
@@ -200,6 +204,7 @@ public class LinkedList<T> {
 
     /**
      * Returns <code>true</code> if this list contains no elements.
+     * @return True or false.
      */
     public boolean isEmpty() {
         return size == 0;
@@ -211,6 +216,7 @@ public class LinkedList<T> {
      * square brackets ("[]"). Adjacent elements are separated by the
      * characters ", " (comma and space). Elements are converted to
      * strings by the method toString() inherited from Object.
+     * This method is O(n).
      */
    public String toString() {
         
