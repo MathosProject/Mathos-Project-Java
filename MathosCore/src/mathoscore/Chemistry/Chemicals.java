@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Chemicals {
 	
+	// TODO instead, add a compound class.
+	
 	ArrayList<Chemical> chemicals;
 	
 	public final class Chemical {
@@ -71,6 +73,15 @@ public class Chemicals {
 			chemicals.add(chemical);
 			return false;
 		}
+	}
+	
+	/**
+	 * The number of compounds...
+	 * @return
+	 */
+	public int getNumberOfChemicals()
+	{
+		return chemicals.size();
 	}
 	
 }
