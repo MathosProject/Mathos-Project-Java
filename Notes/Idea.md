@@ -1,14 +1,15 @@
 Primary focus:
-* Matrix and vector manipulation
-* - Row echelon form
-* - Transition matrix and convertion from diff. vector spaces.
-* - Vector space checker (based axioms for vector space)
-* - Linear independence checker
-* - Wronsikians matrix
-* - Binary matrices.
-* - Markov's chains (dynamics systemms)
-* - Graph theory
-* - Network theory
+Matrix and vector manipulation
+* Row echelon form
+* Transition matrix and convertion from diff. vector spaces.
+* Vector space checker (based axioms for vector space)
+* Linear independence checker
+* Wronsikians matrix
+* Binary matrices.
+* Markov's chains (dynamics systemms)
+* Graph theory
+* Network theory
+* Gamry
 
 * move .NET version of Mathos to github
 * test assessment - feedback system (what should you work on: give Khan Academy video)
