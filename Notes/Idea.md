@@ -9,8 +9,9 @@ Matrix and vector manipulation
 * Markov's chains (dynamics systemms)
 * Graph theory
 * Network theory
-* Gamry
+* Game theory
 
+Miscellaneous
 * move .NET version of Mathos to github
 * test assessment - feedback system (what should you work on: give Khan Academy video)
 * AbstractVector idea (KTH)
