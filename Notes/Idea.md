@@ -6,7 +6,7 @@ Matrix and vector manipulation
 * Linear independence checker
 * Wronsikians matrix
 * Binary matrices.
-* Markov's chains (dynamics systemms)
+* Markov's chains (dynamics systems)
 * Graph theory
 * Network theory
 * Game theory
