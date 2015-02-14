@@ -1,5 +1,5 @@
-Primary focus:
-#Pure and applied mathematics algorithms
+#Primary focus:
+##Pure and applied mathematics algorithms
 Matrix and vector manipulation
 * Row echelon form
 * Transition matrix and convertion from diff. vector spaces.
@@ -33,7 +33,7 @@ Combinatorics
 Set theory
 * Group theory
 
-#Test Assesment system
+##Test Assesment system
 
 Miscellaneous
 * move .NET version of Mathos to github
