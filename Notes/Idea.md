@@ -12,6 +12,21 @@ Matrix and vector manipulation
 * Game theory
 * Chaos
 
+Number theory
+* Independent residues
+* Difference and summation
+* 
+Application of calculus
+
+
+Binomial coefficents
+* Generating functions
+* Hypergeometric functions
+
+Combinatorics
+* Sitrling Numbers
+* 
+
 Miscellaneous
 * move .NET version of Mathos to github
 * test assessment - feedback system (what should you work on: give Khan Academy video)
