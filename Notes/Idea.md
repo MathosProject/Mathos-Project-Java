@@ -17,7 +17,10 @@ Number theory
 * Difference and summation
 * 
 Application of calculus
-
+* Approximation of integrals
+* Taylor approximations
+* Business application
+* Differential equations
 
 Binomial coefficents
 * Generating functions
@@ -25,7 +28,6 @@ Binomial coefficents
 
 Combinatorics
 * Sitrling Numbers
-* 
 
 Miscellaneous
 * move .NET version of Mathos to github
