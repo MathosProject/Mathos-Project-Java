@@ -30,8 +30,7 @@ Combinatorics
 * Sitrling Numbers
 
 Set theory
-* ..
-* 
+* Group theory
 
 
 Miscellaneous
