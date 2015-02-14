@@ -29,6 +29,11 @@ Binomial coefficents
 Combinatorics
 * Sitrling Numbers
 
+Set theory
+* ..
+* 
+
+
 Miscellaneous
 * move .NET version of Mathos to github
 * test assessment - feedback system (what should you work on: give Khan Academy video)
