@@ -10,6 +10,7 @@ Matrix and vector manipulation
 * Graph theory
 * Network theory
 * Game theory
+* Chaos
 
 Miscellaneous
 * move .NET version of Mathos to github
