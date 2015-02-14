@@ -1,4 +1,4 @@
-#Primary focus:
+#Primary focus
 ##Pure and applied mathematics algorithms
 Matrix and vector manipulation
 * Row echelon form
