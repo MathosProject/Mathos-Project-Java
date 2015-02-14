@@ -39,6 +39,11 @@ Set theory
 * Group theory
 
 ##Test assesment system
+Features
+* Assessing functions for Mathematics, Chemistry, Physics, (Computer Science)
+* Ability to create homework
+* Analytics for the teachers
+* Social interactivity (share Google+)
 
 Miscellaneous
 * move .NET version of Mathos to github
