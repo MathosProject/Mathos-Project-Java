@@ -48,7 +48,7 @@ Features
 * Assesing subjective questions based on a template (based on Zhao F.. (2008). The Algorithm Analyses and Design about the Subjective Test Online Basing on the DOM Tree. Computer Science and Software Engineering, 2008 International Conference on. Vol. 5, ss.577,581.)
 
 ##Miscellaneous
-* move .NET version of Mathos to github
+* ~~move .NET version of Mathos to github~~
 * test assessment - feedback system (what should you work on: give Khan Academy video)
 * AbstractVector idea (KTH)
 * math game
