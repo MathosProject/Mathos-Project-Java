@@ -1,13 +1,13 @@
-package mathoscore.NotationFix;
+package mathoscore;
 
 import mathoscore.Data.Stack.MathStack;
 import mathoscore.Exceptions.InvalidExpressionException;
 import mathoscore.Exceptions.StackEmptyException;
 
 /**
- * The PostFix class implements an evaluator for integer postfix expressions.
+ * The Postfix class implements an evaluator for integer postfix expressions.
  *
- * PostFix notation is a simple way to define and write arithmetic expressions
+ * Postfix notation is a simple way to define and write arithmetic expressions
  * without the need for parentheses or priority rules. For example, the postfix
  * expression "1 2 - 3 4 + *" corresponds to the ordinary infix expression
  * "(1 - 2) * (3 + 4)". The expressions may contain decimal 32-bit integer
@@ -80,7 +80,7 @@ public class Postfix {
 	 */
 	private static boolean isOperator(String s) {
 		
-		return s.matches("(\\+)?(\\-)?(\\*)?(/)?") && s.length() == 1; //can be simplified (+-*/)
+		return s.matches("(\\+)?(\\-)?(\\*)?(\\/)?") && s.length() == 1; //can be simplified (+-*/)
 	}
 	
 	/**
@@ -96,6 +96,7 @@ public class Postfix {
 	 *   followed by a single '0'.
 	 */
 	private static boolean isInteger(String s) {
+		
 		return s.matches("(((\\-)*?[1-9](\\d+)*)|(\\-)*?0)");
 	}
 }

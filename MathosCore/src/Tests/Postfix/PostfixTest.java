@@ -1,9 +1,9 @@
 package Tests.Postfix;
 import mathoscore.Exceptions.InvalidExpressionException;
 import mathoscore.Exceptions.StackEmptyException;
-import mathoscore.NotationFix.Postfix;
 import static org.junit.Assert.*;
 
+import mathoscore.Postfix;
 import org.junit.Test;
 
 public class PostfixTest {
@@ -11,7 +11,7 @@ public class PostfixTest {
 	@Test
 	public void test() throws StackEmptyException, InvalidExpressionException {
 		
-		assertTrue(Postfix.evaluate("0") == 0);
+		assertTrue( Postfix.evaluate("0") == 0);
 		assertTrue( Postfix.evaluate("-0") == -0);
 		assertTrue( Postfix.evaluate("1234567890") == 1234567890);
 		assertTrue( Postfix.evaluate("-1234567890") == -1234567890);
