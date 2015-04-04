@@ -1,12 +1,12 @@
 package mathoscore.Chemistry;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Chemicals {
 	
 	// TODO instead, add a compound class.
-	
-	ArrayList<Chemical> chemicals;
+	private ArrayList<Chemical> chemicals;
 	
 	public final class Chemical {
 		private final String name;
@@ -39,16 +39,13 @@ public class Chemicals {
 			if (!(o instanceof Chemical)) return false;
 			
 			Chemical obj = (Chemical)o;
-			
-			if(obj.getName() == this.name) return true;
-			
-			return false;
-		}
+
+            return Objects.equals(obj.getName(), this.name);
+        }
 	}
 	
 	public Chemicals() {
-		
-		chemicals = new ArrayList<Chemicals.Chemical>();
+		chemicals = new ArrayList<>();
 	}
 	
 	/**
@@ -63,25 +60,23 @@ public class Chemicals {
 		int index = chemicals.indexOf(chemical);
 		
 		if(index != -1) {
-			
 			Chemical current = chemicals.get(index);
+
 			chemicals.set(index, new Chemical(current.getName(), current.getAmount() + chemical.getAmount()));
-			return true;
-		}
-		else {
-			
+
+            return true;
+		} else {
 			chemicals.add(chemical);
-			return false;
+
+            return false;
 		}
 	}
 	
 	/**
 	 * The number of compounds...
-	 * @return
+	 * @return Returns the number of chemicals.
 	 */
-	public int getNumberOfChemicals()
-	{
-		return chemicals.size();
-	}
-	
+	public int getNumberOfChemicals() {
+        return chemicals.size();
+    }
 }

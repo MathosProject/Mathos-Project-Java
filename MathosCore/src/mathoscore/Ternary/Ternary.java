@@ -26,10 +26,7 @@ public enum Ternary {
 	 */
 	public static Ternary FromBoolean(boolean value)
 	{
-		if (value)
-			return TRUE;
-		else
-			return FALSE;
+        return value ? TRUE : FALSE;
 	}
 	
 	public Number GetNumber()
@@ -41,7 +38,6 @@ public enum Ternary {
 			return 0;
 		case FALSE:
 			return -1;
-
 		default:
 			//should never occur
 			return -1;
@@ -118,9 +114,7 @@ public enum Ternary {
 				return UNKNOWN;
 		}
 		else
-		{
-			return Ternary.FromBoolean(this.ToBoolean() && secondParameter.ToBoolean());
-		}
+            return Ternary.FromBoolean(this.ToBoolean() && secondParameter.ToBoolean());
 	}
 	
 	/**
@@ -143,9 +137,7 @@ public enum Ternary {
 				return UNKNOWN;
 		}
 		else
-		{
-			return Ternary.FromBoolean(this.ToBoolean() || secondParameter.ToBoolean());
-		}
+            return Ternary.FromBoolean(this.ToBoolean() || secondParameter.ToBoolean());
 	}
 	
 	/**
@@ -168,8 +160,6 @@ public enum Ternary {
 				return UNKNOWN;
 		}
 		else
-		{
-			return Ternary.FromBoolean(this.ToBoolean() ^ secondParameter.ToBoolean());
-		}
+            return Ternary.FromBoolean(this.ToBoolean() ^ secondParameter.ToBoolean());
 	}
 }

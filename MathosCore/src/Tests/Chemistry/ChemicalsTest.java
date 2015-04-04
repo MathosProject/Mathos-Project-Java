@@ -20,8 +20,6 @@ public class ChemicalsTest {
 	public void AddChemicalTest() {
 		assertFalse(chem.addChemical("H",1));
 		assertTrue(chem.addChemical("H",2));
-		
-		
+        assertTrue(chem.getNumberOfChemicals() == 1);
 	}
-
 }

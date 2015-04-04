@@ -34,8 +34,7 @@ public final class SingleVariableFunction {
 	{
 		return function;
 	}
-	
-	
+
 	/**
 	 * Gets the lower bound for the function.
 	 * @return The lower bound
@@ -53,8 +52,7 @@ public final class SingleVariableFunction {
 	{
 		return upperBound;
 	}
-	
-	
+
 	/**
 	 * Finds the roots (the x value when f(x)=0) of the function using Newton's method.
 	 * @param step The step.
@@ -64,6 +62,7 @@ public final class SingleVariableFunction {
 	{
 		return findRoots(step, new MutableBoolean());
 	}
+
 	/**
 	 * Finds the roots (the x value when f(x)=0) of the function using Newton's method.
 	 * @param step The step.
@@ -101,7 +100,4 @@ public final class SingleVariableFunction {
 	{
 		return (x < 0.0) ? -1 : (x > 0.0) ? 1 : 0;
 	}
-
-
-
 }

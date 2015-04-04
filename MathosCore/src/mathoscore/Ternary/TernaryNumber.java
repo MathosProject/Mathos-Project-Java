@@ -11,19 +11,19 @@ public class TernaryNumber {
 	
 	public Number ToNumber()
 	{
-		Number num = 3;
+		/*Number num = 3;
 		
 		for (int i = 0; i < value.length; i++) {
 			//this should be fixed.
-			//num += value[value.length-i+1].GetNumber().doubleValue() * PowThree(i).doubleValue();
-		}
+			num += value[value.length-i+1].GetNumber().doubleValue() * PowThree(i).doubleValue();
+		}*/
 		
-		return num;
+		return 3;
 	}
 	
 	public Number PowThree(int exponent)
 	{
-		Number num = 3;
+		//Number num = 3;
 		switch (exponent) {
 		case 0:
 			return 1;
@@ -33,5 +33,4 @@ public class TernaryNumber {
 			return  3 *  PowThree(exponent-1).longValue(); // have to fix this.
 		}
 	}
-	
 }

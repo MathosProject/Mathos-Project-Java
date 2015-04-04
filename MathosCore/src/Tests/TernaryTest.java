@@ -6,19 +6,17 @@ import org.junit.Assert;
 
 import mathoscore.*;
 import mathoscore.Ternary.Ternary;
+import org.junit.Test;
 
 public class TernaryTest {
-	Ternary tn = Ternary.FALSE;
-	
-	
-	private void NotTest() {
-		// TODO Auto-generated method stub
+
+    @Test
+	public void NotTest() {
 		Assert.assertEquals(Ternary.FALSE , Ternary.TRUE.Not());
 	}
-	
-	private void AndTest()
-	{
-		Assert.assertEquals(Ternary.UNKNOWN, Ternary.TRUE.And(Ternary.UNKNOWN) );
-	}
-	
+
+    @Test
+	public void AndTest() {
+        Assert.assertEquals(Ternary.UNKNOWN, Ternary.TRUE.And(Ternary.UNKNOWN));
+    }
 }

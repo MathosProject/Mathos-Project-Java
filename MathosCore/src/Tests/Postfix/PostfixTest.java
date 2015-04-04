@@ -1,11 +1,9 @@
 package Tests.Postfix;
-import mathoscore.Data.Stack.*;
 import mathoscore.Exceptions.InvalidExpressionException;
 import mathoscore.Exceptions.StackEmptyException;
-import mathoscore.Postfix.Postfix;
+import mathoscore.NotationFix.Postfix;
 import static org.junit.Assert.*;
 
-import org.junit.Before;
 import org.junit.Test;
 
 public class PostfixTest {
@@ -19,7 +17,7 @@ public class PostfixTest {
 		assertTrue( Postfix.evaluate("-1234567890") == -1234567890);
 		assertTrue( Postfix.evaluate("1 23 +") == 1 + 23);
 		assertTrue( Postfix.evaluate("1	23	+") == 1 + 23); // tabs instead of spaces
-		assertTrue( Postfix.evaluate("0 1 /") == 0 / 1);
+		assertTrue( Postfix.evaluate("0 1 /") == 0);
 		assertTrue( Postfix.evaluate("1 2 + -3 *") == (1 + 2) * -3);
 		assertTrue( Postfix.evaluate("12 34 - 56 -78 + *") == (12 - 34) * (56 + -78));
 		assertTrue( Postfix.evaluate("1 2 + 3 * 4 - 5 /") == (((1 + 2) * 3) - 4) / 5);

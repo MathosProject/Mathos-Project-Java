@@ -11,10 +11,9 @@ public class Finance {
 	 * @param numberOfPeriods Number of periods
 	 * @return Future value
 	 */
-    public static BigDecimal FutureValue(BigDecimal presentValue, BigDecimal rateOfReturn, int numberOfPeriods)
+    public static BigDecimal futureValue(BigDecimal presentValue, BigDecimal rateOfReturn, int numberOfPeriods)
     {
-    	//removed the rounding option. To round, use BigDecimal.Round
-        return presentValue.multiply( DecimalPower(( new BigDecimal (1).add( rateOfReturn.divide( new BigDecimal(100))) ), numberOfPeriods));
+        return presentValue.multiply(decimalPower((new BigDecimal(1).add(rateOfReturn.divide(new BigDecimal(100)))), numberOfPeriods));
     }
     
     /**
@@ -24,9 +23,9 @@ public class Finance {
      * @param numberOfPeriods Number of periods
      * @return Present value
      */
-    public static BigDecimal PresentValue(BigDecimal futureValue, BigDecimal rateOfReturn, int numberOfPeriods)
+    public static BigDecimal presentValue(BigDecimal futureValue, BigDecimal rateOfReturn, int numberOfPeriods)
     {
-        return futureValue.divide( DecimalPower((new BigDecimal(1).add( rateOfReturn.divide(new BigDecimal(100)))), numberOfPeriods));
+        return futureValue.divide(decimalPower((new BigDecimal(1).add(rateOfReturn.divide(new BigDecimal(100)))), numberOfPeriods), BigDecimal.ROUND_UP);
     }
 
     /// <summary>
@@ -137,7 +136,7 @@ public class Finance {
      * @param power Exponent for calculation
      * @return Resulting value raised to power.
      */
-    private static BigDecimal DecimalPower(BigDecimal value, int power)
+    private static BigDecimal decimalPower(BigDecimal value, int power)
     {
         if (power == 0)
             return new BigDecimal(1);
@@ -157,7 +156,7 @@ public class Finance {
             power--;
         }
 
-        return negativePower ? new BigDecimal(1).divide(result) : result;
+        return negativePower ? new BigDecimal(1).divide(result, BigDecimal.ROUND_UNNECESSARY) : result;
     }
 }
 
