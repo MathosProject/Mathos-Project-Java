@@ -1,77 +1,171 @@
 package mathoscore.Data.Set;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
  * An implementation of a mathematical set.
  *
+ *  - Subsets need work.
+ *  - Needs cartesian product.
+ *  - Needs power set.
+ *
  * @author Ethan Dagner
  *
  * @param <T> The type of elements that will be stored.
- * @version 2015.02.06
+ * @version 2015.05.06
  */
 public class Set<T> {
-    public final List<T> Elements;
+    /**
+     * The contents of the set.
+     */
+    public final HashSet<T> Elements;
 
     /**
-     * Creates an empty set
+     * Create an empty set.
      */
     public Set() {
-        Elements = new ArrayList<>();
+        Elements = new HashSet<>();
     }
 
     /**
-     * Creates a set from another set
-     * @param s Set to copy from
+     * Create a set from an already existing set.
+     * @param s The base set to copy from.
      */
     public Set(Set<T> s) {
         Elements = s.Elements;
     }
 
     /**
-     * Creates a set that contains the given elements
-     * @param elems Elements to contain
+     * Create a set from a list of elements.
+     * @param elems The elements the set will contain.
      */
     @SafeVarargs
     public Set(T... elems) {
-        Elements = new ArrayList<>();
+        this();
+
         Elements.addAll(Arrays.asList(elems));
     }
 
     /**
-     * Add an element to the set
-     * @param element Element to add
+     * Add an element to the set.
+     * @param element The element to add.
+     * @return This set with the given element added.
      */
-    public void add(T element) {
+    public Set<T> add(T element) {
         Elements.add(element);
+
+        return this;
     }
 
     /**
-     * Add multiple elements to the set
-     * @param elements Elements to add
+     * Add multiple elements to the set.
+     * @param elements The elements to add.
+     * @return The elements to add.
      */
     @SafeVarargs
-    public final void add(T... elements) {
+    public final Set<T> add(T... elements) {
         Collections.addAll(Elements, elements);
+
+        return this;
     }
 
     /**
-     * Is the current set a subset of b
-     * @param b Parent set
-     * @return Current Set ⊆ b
+     * Add the contents of another set into this one.
+     * @param set The base set.
+     * @return This set alongside set b combined.
+     */
+    public Set<T> add(Set<T> set) {
+        Elements.addAll(set.Elements.stream().collect(Collectors.toList()));
+
+        return this;
+    }
+
+    /**
+     * Remove the given item from the set.
+     * @param item The item to remove.
+     * @return This set with the given item removed.
+     */
+    public Set<T> remove(T item) {
+        Elements.remove(item);
+
+        return this;
+    }
+
+    /**
+     * Remove the item that matches the given expression.
+     * @param match The expression to match to.
+     * @return This set with the matched item removed.
+     */
+    public Set<T> removeMatch(Predicate<T> match) {
+        Elements.removeIf(match);
+
+        return this;
+    }
+
+    /**
+     * Get the union of this set and b.
+     * @param b The second set
+     * @return this ∪ b.
+     */
+    public Set<T> union(Set<T> b) {
+        List<T> ret = new ArrayList<>();
+        HashSet<T> tmp = Elements;
+
+        tmp.addAll(b.Elements);
+        tmp.stream().filter(element -> !ret.contains(element)).forEach(ret::add);
+
+        return new Set<>((T[])ret.stream().toArray(Object[]::new));
+    }
+
+    /**
+     * Get the intersection of this set and b.
+     * @param b The second set.
+     * @return this ∩ b.
+     */
+    public Set<T> intersection(Set<T> b) {
+        List<T> ret = Elements.stream().filter(b.Elements::contains).collect(Collectors.toList());
+
+        return new Set<>((T[]) ret.stream().toArray(Object[]::new));
+    }
+
+    /**
+     * Get the difference of this set and b.
+     * @param b The second set.
+     * @return this \ b.
+     */
+    public Set<T> difference(Set<T> b) {
+        List<T> ret = Elements.stream().filter(element -> !b.Elements.contains(element)).collect(Collectors.toList());
+
+        return new Set<>((T[]) ret.stream().toArray(Object[]::new));
+    }
+
+    /**
+     * Get the symmetric difference of this set and b.
+     * @param b The second set.
+     * @return Either (this △ b) or (this ⊖ b).
+     */
+    public Set<T> symmetric(Set<T> b) {
+        Set<T> union = union(b);
+        Set<T> inter = intersection(b);
+
+        return union.difference(inter);
+    }
+
+    /**
+     * Is this set a subset of b?
+     * @param b The base set.
+     * @return this ⊆ b.
      */
     public boolean isSubset(Set<T> b) {
         return b.Elements.containsAll(Elements);
     }
 
     /**
-     * Is the current set a proper subset of b
-     * @param b Parent set
-     * @return Current Set ⊂ b
+     * Is this set a proper subset of b?
+     * @param b The base set.
+     * @return this ⊂ b.
      */
     public boolean isProperSubset(Set<T> b) {
         boolean proper = false;
@@ -89,46 +183,35 @@ public class Set<T> {
         return proper;
     }
 
-    /**
-     * Get the union of the current set and b
-     * @param b Second set
-     * @return Current Set ∪ b
-     */
-    public Set<T> union(Set<T> b) {
-        List<T> ret = new ArrayList<>();
+    @Override
+    public boolean equals(Object o) {
+        if(!(o instanceof Set))
+            return false;
 
-        Elements.stream().filter(elem -> !ret.contains(elem)).forEach(ret::add);
-        b.Elements.stream().filter(elem -> !ret.contains(elem)).forEach(ret::add);
+        for(T element : ((Set<T>)o).Elements) {
+            if(!Elements.contains(element))
+                return false;
+        }
 
-        return new Set<>((T[]) ret.stream().toArray(Object[]::new));
+        return true;
     }
 
-    /**
-     * Get the intersection of the current set and b
-     * @param b Second set
-     * @return Current Set ∩ b
-     */
-    public Set<T> intersection(Set<T> b) {
-        List<T> ret = new ArrayList<>();
-
-        ret.addAll(Elements);
-        ret.retainAll(b.Elements);
-
-        return new Set<>((T[]) ret.stream().toArray(Object[]::new));
+    @Override
+    public int hashCode() {
+        return (Elements != null) ? Elements.hashCode() : 0;
     }
 
-    /**
-     * Get the symmetric difference of the current set and b
-     * @param b Second set
-     * @return Current Set △ b
-     */
-    public Set<T> symmetric(Set<T> b) {
-        List<T> ret = new ArrayList<>();
-        List<T> inter = intersection(b).Elements;
+    @Override
+    public String toString() {
+        String str = "{";
 
-        ret.addAll(Elements.stream().filter(elem -> !inter.contains(elem)).collect(Collectors.toList()));
-        ret.addAll(b.Elements.stream().filter(elem -> !inter.contains(elem)).collect(Collectors.toList()));
+        for(T element : Elements) {
+            str += element.toString() + ",";
+        }
 
-        return new Set<>((T[]) ret.stream().toArray(Object[]::new));
+        if(str.endsWith(","))
+            str = str.substring(0, str.length() - 1);
+
+        return str + "}";
     }
 }
