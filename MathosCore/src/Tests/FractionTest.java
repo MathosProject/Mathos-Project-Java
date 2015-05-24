@@ -9,7 +9,7 @@ public class FractionTest {
     public void simpleFractionTest() {
         Fraction f = new Fraction(4, 2);
 
-        System.out.println(f.toDecimal());
+        System.out.println(f.toDouble());
     }
 
     @Test
