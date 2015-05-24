@@ -1,4 +1,6 @@
-package mathoscore;
+package mathoscore.Arithmetic;
+
+import mathoscore.Arithmetic.Numbers.Get;
 
 /**
  * A simple fraction type.
@@ -50,14 +52,11 @@ public class Fraction {
     }
 
     /**
-     * NOTE: This doesn't really belong in Fraction; should be moved, had nowhere to put it.
-     *
-     * @param a First multiple
-     * @param b Second multiple
-     * @return Gets the greatest common multiple.
+     * Inverse the current fraction.
+     * @return Returns the inverted form of the current fraction.
      */
-    private long gcm(long a, long b) {
-        return b == 0 ? a : gcm(b, a % b);
+    public Fraction inverse() {
+        return new Fraction(Denominator, Numerator);
     }
 
     /**
@@ -65,7 +64,7 @@ public class Fraction {
      * @return Returns a simplified version of the current fraction.
      */
     public Fraction simplify() {
-        long gcm = gcm(Numerator, Denominator);
+        long gcm = Get.gcm(Numerator, Denominator);
 
         return new Fraction(Numerator / gcm, Denominator / gcm);
     }
@@ -76,8 +75,8 @@ public class Fraction {
      * @param b Denominator
      * @return Returns the given fraction in simplified form.
      */
-    public Fraction simplify(long a, long b) {
-        long gcm = gcm(a, b);
+    public static Fraction simplify(long a, long b) {
+        long gcm = Get.gcm(a, b);
 
         return new Fraction(a / gcm, b / gcm);
     }
@@ -87,7 +86,7 @@ public class Fraction {
      * @param f Fraction to simplify
      * @return Returns the given fraction in simplified form.
      */
-    public Fraction simplify(Fraction f) {
+    public static Fraction simplify(Fraction f) {
         return simplify(f.Numerator, f.Denominator);
     }
 
@@ -95,7 +94,7 @@ public class Fraction {
      * Get decimal form.
      * @return Returns the fraction in decimal form.
      */
-    public double toDecimal() {
+    public double toDouble() {
         return Numerator / Denominator;
     }
 
