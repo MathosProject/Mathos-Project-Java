@@ -1,10 +1,14 @@
 package Tests.Calculus;
 
+import static org.junit.Assert.*;
 import mathoscore.Calculus.DifferentialCalculus;
+
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+
+import java.math.*;
 
 public class DifferentialCalculusTest {
 
@@ -28,4 +32,13 @@ public class DifferentialCalculusTest {
 
         Assert.assertTrue(derivative.compareTo(new BigDecimal(9)) == 0);
     }
+    
+    @Test
+	public void TestRichardExtr() throws Exception {
+		
+    	double diff = DifferentialCalculus.firstDerivative(x -> Math.log(x) , 2, 0.1);
+    	double diffext = DifferentialCalculus.firstDerivativeExtrapolate(x -> Math.log(x) , 2, 0.1);
+    	System.out.println(diff);
+    	System.out.println(diffext);
+	}
 }
