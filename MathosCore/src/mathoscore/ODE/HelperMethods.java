@@ -1,6 +1,7 @@
 package mathoscore.ODE;
 
 /**
+ * A set of methods that can be useful when working with vectors.
  * 
  * @author Artem Los (arteml@kth.se), Mathos Project.
  *
@@ -94,4 +95,6 @@ public class HelperMethods {
 		
 		return true;
 	}
+	
+	// add a toString for 1 and 2 dim. vectors.
 }

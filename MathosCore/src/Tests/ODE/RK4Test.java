@@ -1,7 +1,5 @@
 package Tests.ODE;
 
-import static org.junit.Assert.*;
-
 import java.util.function.Function;
 
 import mathoscore.ODE.*;
@@ -16,8 +14,9 @@ public class RK4Test {
 		
 		//FunctionParameter fp = new FunctionParameter(, Y)
 		System.out.println("dd");
-		Solve.RK4((param) -> new double [] {0}, new double[]{1}, new double[]{1, 10}, 0.1);
-
+		double[][] a =  Solve.RK4((param) -> new double [] {1}, new double[]{0}, new double[]{1, 10}, 0.001);
+		
+		System.out.println();
 		
 		
 		

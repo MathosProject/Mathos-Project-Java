@@ -12,7 +12,7 @@ public class Solve {
 	 * @param steplength
 	 * @return
 	 */
-	public static double[] RK4(Function<FunctionParameter, double[]> function, double[] initialCondition, double[] interval, double steplength) {
+	public static double[][] RK4(Function<FunctionParameter, double[]> function, double[] initialCondition, double[] interval, double steplength) {
 		
 		double tstart = interval[0];
 		double tend = interval[1];
@@ -40,10 +40,11 @@ public class Solve {
 			
 			T[i] = tstart;
 			Y[i] = y;
+			i++;
 			
 		}
 		
-		return null;
+		return Y;
 	}
 	
 }
