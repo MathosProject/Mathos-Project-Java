@@ -35,7 +35,7 @@ public class HelperMethods {
 		double[] result = new double[vector1.length];
 
 		for(int i = 0; i < vector1.length; i++) {
-			result[i] = vector1[1] * vector2[i];
+			result[i] = vector1[i] * vector2[i];
 		}
 		
 		return result;

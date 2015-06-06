@@ -34,17 +34,16 @@ public class HelperMethodsTest {
 		}
 	}
 	
-	//@Test
-	// still working on this test.
+	@Test
 	public void MulTest() {
 		double[] vectorA = {1,2,3,4};
 		double[] vectorB = {1,2,3,4};
 		
 		double[] result = HelperMethods.Mul(vectorA, vectorB);
 		double[] resultB = HelperMethods.Mul(2, vectorB);
-		System.out.println(resultB);
-		assert(result.equals(new double[]{1,4,9,16}));
-		assert(resultB.equals(new double[]{1,4,9,16}));
+
+		assert(HelperMethods.AreEqual(result, new double[]{1,4,9,16}));
+		assert(HelperMethods.AreEqual(resultB, new double[]{2,4,6,8}));
 	}
 
 }
