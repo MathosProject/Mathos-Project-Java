@@ -12,7 +12,7 @@ public class Solve {
 	 * @param steplength
 	 * @return
 	 */
-	public static int[] RK4(Function<FunctionParameter, double[]> function, double[] initialCondition, double[] interval, double steplength) {
+	public static double[] RK4(Function<FunctionParameter, double[]> function, double[] initialCondition, double[] interval, double steplength) {
 		
 		double tstart = interval[0];
 		double tend = interval[1];
