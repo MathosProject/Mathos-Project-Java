@@ -27,11 +27,15 @@ public class Solve {
 		while (tstart < until)
 		{
 			double[] f1 = function.apply(new FunctionParameter(tstart, y));
-			double[] f2 = function.apply(new FunctionParameter(tstart + steplength/2, Add(y, Mul(steplength , Mul( 0.5, f1)))));
-			double[] f3 = function.apply(new FunctionParameter(tstart + steplength/2, Add(y, Mul(steplength , Mul( 0.5, f2)))));
-			double[] f4 = function.apply(new FunctionParameter(tstart + steplength, Add(y, Mul(steplength , f3))));
+			double[] f2 = function.apply(new FunctionParameter(tstart + steplength/2, 
+					HelperMethods.Add(y, HelperMethods.Mul(steplength , HelperMethods.Mul( 0.5, f1)))));
+			double[] f3 = function.apply(new FunctionParameter(tstart + steplength/2,
+					HelperMethods.Add(y, HelperMethods.Mul(steplength , HelperMethods.Mul( 0.5, f2)))));
+			double[] f4 = function.apply(new FunctionParameter(tstart + steplength,
+					HelperMethods.Add(y, HelperMethods.Mul(steplength , f3))));
 			
-			y = Add(y, Mul(steplength/6, Add(Add(Add(f1, f2), f3), f4)));
+			y = HelperMethods.Add(y, HelperMethods.Mul(steplength/6, 
+					HelperMethods.Add(HelperMethods.Add(HelperMethods.Add(f1, f2), f3), f4)));
 			tstart += steplength;
 			
 			T[i] = tstart;
@@ -41,54 +45,5 @@ public class Solve {
 		
 		return null;
 	}
-	
-	// The methods below this line are here temporary. Better to put them into a different package for linear algebra operations
-	
-	/**
-	 * A Helper method that multiplies a vector by a scalar.
-	 * @param scalar The scalar
-	 * @param vector The vector
-	 */
-	public static double[] Mul(double scalar, double[] vector) {
-		double[] result = new double[vector.length];
-
-		for(int i = 0; i < vector.length; i++) {
-			result[i] = vector[i] * scalar;
-		}
-		
-		return result;
-	}
-	
-	/**
-	 * A Helper method that multiplies two vectors (componentwise). If vectors interpreted as row vectors, it is essentially dot product. 
-	 * @param scalar The first vector
-	 * @param vector The second vector
-	 */
-	public static double[] Mul(double[] vector1, double[] vector2) {
-		double[] result = new double[vector1.length];
-
-		for(int i = 0; i < vector1.length; i++) {
-			result[i] = vector1[1] * vector2[i];
-		}
-		
-		return result;
-	}
-	
-	/**
-	 * A Helper method that adds two vectors (componentwise). 
-	 * @param scalar The first vector
-	 * @param vector The second vector
-	 */
-	public static double[] Add(double[] vector1, double[] vector2) {
-		double[] result = new double[vector1.length];
-
-		for(int i = 0; i < vector1.length; i++) {
-			result[i] = vector1[1] + vector2[i];
-		}
-		
-		return result;
-	}
-	
-	
 	
 }
