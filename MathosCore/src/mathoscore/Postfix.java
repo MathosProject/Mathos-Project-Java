@@ -1,13 +1,13 @@
 package mathoscore;
 
-import mathoscore.Data.Stack.MathStack;
-import mathoscore.Exceptions.InvalidExpressionException;
-import mathoscore.Exceptions.StackEmptyException;
+import mathoscore.data.stack.MathStack;
+import mathoscore.exceptions.InvalidExpressionException;
+import mathoscore.exceptions.StackEmptyException;
 
 /**
- * The Postfix class implements an evaluator for integer postfix expressions.
+ * The postfix class implements an evaluator for integer postfix expressions.
  *
- * Postfix notation is a simple way to define and write arithmetic expressions
+ * postfix notation is a simple way to define and write arithmetic expressions
  * without the need for parentheses or priority rules. For example, the postfix
  * expression "1 2 - 3 4 + *" corresponds to the ordinary infix expression
  * "(1 - 2) * (3 + 4)". The expressions may contain decimal 32-bit integer
@@ -21,7 +21,7 @@ public class Postfix {
 	/**
 	 * Evaluates the given postfix expression.
 	 * 
-	 * @param expr  Arithmetic expression in postfix notation
+	 * @param expr  arithmetic expression in postfix notation
 	 * @return      The value of the evaluated expression
 	 * @throws StackEmptyException, InvalidExpressionException.
 	 */

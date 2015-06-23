@@ -1,4 +1,4 @@
-package mathoscore.Exceptions;
+package mathoscore.exceptions;
 
 /**
  * This will be thrown if a bad operation is performed on an empty stack.

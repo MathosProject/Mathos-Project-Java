@@ -1,4 +1,4 @@
-package mathoscore.Vectors;
+package mathoscore.vectors;
 
 /**
  * This interface will define a type of mathematical vector element, where

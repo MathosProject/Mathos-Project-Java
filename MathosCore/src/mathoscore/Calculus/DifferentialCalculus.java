@@ -1,4 +1,4 @@
-package mathoscore.Calculus;
+package mathoscore.calculus;
 
 import java.math.BigDecimal;
 import java.util.function.Function;

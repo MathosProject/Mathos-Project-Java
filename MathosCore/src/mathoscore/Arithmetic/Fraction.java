@@ -1,6 +1,6 @@
-package mathoscore.Arithmetic;
+package mathoscore.arithmetic;
 
-import mathoscore.Arithmetic.Numbers.Get;
+import mathoscore.arithmetic.Numbers.Get;
 
 /**
  * A simple fraction type.

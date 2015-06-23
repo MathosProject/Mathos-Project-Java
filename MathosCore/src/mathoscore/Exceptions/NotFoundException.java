@@ -1,4 +1,4 @@
-package mathoscore.Exceptions;
+package mathoscore.exceptions;
 
 public class NotFoundException extends Exception
 {

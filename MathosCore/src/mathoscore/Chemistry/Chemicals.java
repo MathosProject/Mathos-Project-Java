@@ -1,4 +1,4 @@
-package mathoscore.Chemistry;
+package mathoscore.chemistry;
 
 import java.util.ArrayList;
 import java.util.Objects;

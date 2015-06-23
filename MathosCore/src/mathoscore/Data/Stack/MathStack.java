@@ -1,16 +1,16 @@
-package mathoscore.Data.Stack;
+package mathoscore.data.stack;
 
-import mathoscore.Exceptions.StackEmptyException;
+import mathoscore.exceptions.StackEmptyException;
 
 /**
- * A stack that can only contain integers. This is an extension of Stack class. All methods have the time complexity of O(1).
+ * A stack that can only contain integers. This is an extension of stack class. All methods have the time complexity of O(1).
  * @author Artem Los (artem@artemlos.net)
  * @version 2015.02.06
  *
  */
 public class MathStack extends Stack<Integer> {
 
-	// we could use Stack<Number> but that would require explicit definitions of each number type (of operators).
+	// we could use stack<Number> but that would require explicit definitions of each number type (of operators).
 	/**
 	 * Creates a new instance of MathStack.
 	 */

@@ -1,4 +1,4 @@
-package mathoscore.ODE;
+package mathoscore.ode;
 
 /**
  * A Helper class for Solve function's function parameter.

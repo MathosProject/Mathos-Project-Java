@@ -1,4 +1,4 @@
-package mathoscore.Vectors;
+package mathoscore.vectors;
 
 import java.math.BigInteger;
 

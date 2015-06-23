@@ -1,9 +1,9 @@
-package mathoscore.Data.Graph;
+package mathoscore.data.graph;
 
 import java.util.NoSuchElementException;
 
 /**
- * An iterator over vertices in a Graph object.
+ * An iterator over vertices in a graph object.
  * 
  * @author Stefan Nilsson
  * @version 2013-01-01

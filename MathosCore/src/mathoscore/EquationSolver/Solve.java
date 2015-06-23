@@ -1,4 +1,4 @@
-package mathoscore.EquationSolver;
+package mathoscore.equationsolver;
 
 import java.util.function.Function;
 

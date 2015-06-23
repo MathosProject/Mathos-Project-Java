@@ -1,5 +1,10 @@
-package mathoscore.Arithmetic;
+package mathoscore.arithmetic;
 
+/**
+ * This class provides you with tools for performing operations on doubles.
+ *
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ */
 public class DoubleArithmetic {
     public static final double Epsilon = 4.94065645841247E-324;
 

@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import mathoscore.*;
-import mathoscore.Exceptions.NotFoundException;
+import mathoscore.exceptions.NotFoundException;
 
 public class SingleVariableFunctionTest {
 

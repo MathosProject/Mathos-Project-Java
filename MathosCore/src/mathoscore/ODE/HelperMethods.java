@@ -1,4 +1,4 @@
-package mathoscore.ODE;
+package mathoscore.ode;
 
 /**
  * A set of methods that can be useful when working with vectors.
@@ -29,14 +29,14 @@ public class HelperMethods {
 	 * @param scalar The first vector
 	 * @param vector The second vector
 	 */
-	public static double[] Mul(double[] vector1, double[] vector2) {
+	public static double[] Mul(double[] scalar, double[] vector) {
 		
-		CheckArrays(vector1, vector2);
+		CheckArrays(scalar, vector);
 		
-		double[] result = new double[vector1.length];
+		double[] result = new double[scalar.length];
 
-		for(int i = 0; i < vector1.length; i++) {
-			result[i] = vector1[i] * vector2[i];
+		for(int i = 0; i < scalar.length; i++) {
+			result[i] = scalar[i] * vector[i];
 		}
 		
 		return result;
@@ -47,14 +47,14 @@ public class HelperMethods {
 	 * @param scalar The first vector
 	 * @param vector The second vector
 	 */
-	public static double[] Add(double[] vector1, double[] vector2) {
+	public static double[] Add(double[] scalar, double[] vector) {
 		
-		CheckArrays(vector1, vector2);
+		CheckArrays(scalar, vector);
 		
-		double[] result = new double[vector1.length];
+		double[] result = new double[scalar.length];
 
-		for(int i = 0; i < vector1.length; i++) {
-			result[i] = vector1[i] + vector2[i];
+		for(int i = 0; i < scalar.length; i++) {
+			result[i] = scalar[i] + vector[i];
 		}
 		
 		return result;

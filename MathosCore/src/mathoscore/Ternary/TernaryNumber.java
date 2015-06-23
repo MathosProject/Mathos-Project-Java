@@ -1,4 +1,4 @@
-package mathoscore.Ternary;
+package mathoscore.ternary;
 
 public class TernaryNumber {
 	

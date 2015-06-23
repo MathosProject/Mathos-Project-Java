@@ -1,4 +1,4 @@
-package mathoscore.ODE;
+package mathoscore.ode;
 
 import java.util.function.Function;
 
