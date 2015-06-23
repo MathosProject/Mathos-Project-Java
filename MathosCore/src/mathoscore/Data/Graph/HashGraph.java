@@ -1,7 +1,6 @@
-package mathoscore.Data.Graph;
+package mathoscore.data.graph;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.NoSuchElementException;
@@ -67,7 +66,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph} Time complexity: O(1).
+	 * {@inheritDoc graph} Time complexity: O(1).
 	 */
 	@Override
 	public int numVertices() {
@@ -75,7 +74,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph} Time complexity: O(1).
+	 * {@inheritDoc graph} Time complexity: O(1).
 	 */
 	@Override
 	public int numEdges() {
@@ -83,7 +82,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public int degree(int v) throws IllegalArgumentException {
@@ -105,7 +104,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public VertexIterator neighbors(final int v) {
@@ -151,7 +150,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public boolean hasEdge(int v, int w) {
@@ -173,7 +172,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public int cost(int v, int w) throws IllegalArgumentException {
@@ -191,7 +190,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public void add(int from, int to) {
@@ -200,7 +199,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public void add(int from, int to, int c) {
@@ -239,7 +238,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public void addBi(int v, int w) {
@@ -249,7 +248,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public void addBi(int v, int w, int c) {
@@ -268,7 +267,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public void remove(int from, int to) {
@@ -293,7 +292,7 @@ public class HashGraph implements Graph {
 	}
 
 	/**
-	 * {@inheritDoc Graph}
+	 * {@inheritDoc graph}
 	 */
 	@Override
 	public void removeBi(int v, int w) {

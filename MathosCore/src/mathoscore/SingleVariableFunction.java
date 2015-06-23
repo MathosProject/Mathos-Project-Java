@@ -2,7 +2,7 @@ package mathoscore;
 
 import java.util.function.Function;
 
-import mathoscore.Exceptions.NotFoundException;
+import mathoscore.exceptions.NotFoundException;
 
 /**
  * A class that stores a function that takes in and returns a double. In addition, the function has a set boundary.

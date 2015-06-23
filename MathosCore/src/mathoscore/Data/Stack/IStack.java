@@ -1,12 +1,12 @@
-package mathoscore.Data.Stack;
+package mathoscore.data.stack;
 
-import mathoscore.Exceptions.StackEmptyException;
+import mathoscore.exceptions.StackEmptyException;
 
 /**
  * A stack data structure that has O(1) time complexity on all methods.  
  * @author Artem Los (artem@artemlos.net)
  *
- * @param <T> The type to be stored in the Stack.
+ * @param <T> The type to be stored in the stack.
  * @version 2015.02.06
  */
 public interface IStack<T> {

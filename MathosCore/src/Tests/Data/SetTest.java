@@ -1,6 +1,6 @@
-package Tests.Data;
+package tests.data;
 
-import mathoscore.Data.Set.Set;
+import mathoscore.data.set.Set;
 import org.junit.Test;
 
 public class SetTest {

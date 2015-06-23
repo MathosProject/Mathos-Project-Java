@@ -1,4 +1,4 @@
-package mathoscore.Arithmetic.Numbers;
+package mathoscore.arithmetic.Numbers;
 
 public class Get {
 

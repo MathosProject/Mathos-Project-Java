@@ -1,4 +1,4 @@
-package mathoscore.Vectors;
+package mathoscore.vectors;
 
 /**
  * This interface will define a mathematical object where addition is defined and is commutative, 

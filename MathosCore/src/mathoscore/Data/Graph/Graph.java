@@ -1,4 +1,4 @@
-package mathoscore.Data.Graph;
+package mathoscore.data.graph;
 
 /**
  * A graph with a fixed number of vertices. The vertices are numbered from 0 to

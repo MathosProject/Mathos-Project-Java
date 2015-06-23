@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import mathoscore.Finance;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package mathoscore.Arithmetic;
+package mathoscore.arithmetic;
 
 /**
  * This class provides you with tools for performing operations on doubles.

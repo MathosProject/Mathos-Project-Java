@@ -1,4 +1,4 @@
-package mathoscore.Exceptions;
+package mathoscore.exceptions;
 
 /**
  * If the expression is wrong in the expression.

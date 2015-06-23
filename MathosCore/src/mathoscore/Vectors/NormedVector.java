@@ -1,4 +1,4 @@
-package mathoscore.Vectors;
+package mathoscore.vectors;
 
 /**
  * A vector with a norm on it.

@@ -1,4 +1,4 @@
-package Tests.EquationSolver;
+package tests.equationsolver;
 
 import static org.junit.Assert.*;
 
@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 import org.junit.Test;
 
-import mathoscore.EquationSolver.*;
+import mathoscore.equationsolver.*;
 
 public class SecantMethodTest {
 

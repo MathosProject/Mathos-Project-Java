@@ -1,4 +1,4 @@
-package mathoscore.Data.LinkedList;
+package mathoscore.data.linkedlist;
 
 import java.io.StringWriter;
 

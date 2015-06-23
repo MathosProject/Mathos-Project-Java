@@ -1,4 +1,4 @@
-package mathoscore.Vectors;
+package mathoscore.vectors;
 
 /**
  * This interface will define an "arithmetical" object like a number or a matrix

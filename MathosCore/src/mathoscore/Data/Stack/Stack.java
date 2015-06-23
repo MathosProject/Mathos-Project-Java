@@ -1,6 +1,6 @@
-package mathoscore.Data.Stack;
+package mathoscore.data.stack;
 
-import mathoscore.Exceptions.StackEmptyException;
+import mathoscore.exceptions.StackEmptyException;
 
 import java.io.StringWriter;
 
@@ -8,7 +8,7 @@ import java.io.StringWriter;
  * An implementation of the IStack interface. All methods have the time complexity of O(1).
  * @author Artem Los (artem@artemlos.net)
  *
- * @param <T> The type to be stored in the Stack.
+ * @param <T> The type to be stored in the stack.
  * @version 2015.02.06
  */
 public class Stack<T> implements IStack<T>

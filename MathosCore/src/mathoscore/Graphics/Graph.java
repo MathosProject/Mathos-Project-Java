@@ -1,4 +1,4 @@
-package mathoscore.Graphics;
+package mathoscore.graphics;
 
 public class Graph {
 

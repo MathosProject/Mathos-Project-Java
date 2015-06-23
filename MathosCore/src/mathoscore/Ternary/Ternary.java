@@ -1,7 +1,7 @@
-package mathoscore.Ternary;
+package mathoscore.ternary;
 
 /**
- * A class that simulates a Ternary states (true - unknown - false).
+ * A class that simulates a ternary states (true - unknown - false).
  */
 public enum Ternary {
 	TRUE(1), 
@@ -11,8 +11,8 @@ public enum Ternary {
 	private Ternary(int val) {}
 	
 	/**
-	 * Converts a Ternary object to a boolean (either "true" or "false"), without the "unknown" case.
-	 * @return True if Ternary==TRUE, and False otherwise.
+	 * Converts a ternary object to a boolean (either "true" or "false"), without the "unknown" case.
+	 * @return True if ternary==TRUE, and False otherwise.
 	 */
 	public boolean ToBoolean()
 	{
@@ -20,9 +20,9 @@ public enum Ternary {
 	}
 	
 	/**
-	 * Converts a boolean (either "true" or "false") to a Ternary.
+	 * Converts a boolean (either "true" or "false") to a ternary.
 	 * @param value The boolean.
-	 * @return An equivalent Ternary.
+	 * @return An equivalent ternary.
 	 */
 	public static Ternary FromBoolean(boolean value)
 	{
