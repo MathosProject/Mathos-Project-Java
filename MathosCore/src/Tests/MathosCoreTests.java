@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import mathoscore.Shape;
 import mathoscore.SingleVariableFunction;

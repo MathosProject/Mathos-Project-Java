@@ -1,4 +1,4 @@
-package Tests.ODE;
+package tests.ODE;
 
 import mathoscore.ODE.HelperMethods;
 

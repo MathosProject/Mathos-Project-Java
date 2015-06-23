@@ -1,4 +1,4 @@
-package Tests.EquationSolver;
+package tests.EquationSolver;
 
 import static org.junit.Assert.*;
 

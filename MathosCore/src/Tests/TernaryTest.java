@@ -1,10 +1,8 @@
-package Tests;
+package tests;
 
 import org.junit.Assert;
 
 
-
-import mathoscore.*;
 import mathoscore.Ternary.Ternary;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package Tests.Data;
+package tests.Data;
 
 import mathoscore.Data.Set.Set;
 import org.junit.Test;

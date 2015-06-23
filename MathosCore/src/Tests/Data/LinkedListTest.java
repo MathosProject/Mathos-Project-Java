@@ -1,4 +1,4 @@
-package Tests.Data;
+package tests.Data;
 
 import static org.junit.Assert.*;
 import mathoscore.Data.LinkedList.LinkedList;

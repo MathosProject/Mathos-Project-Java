@@ -6,7 +6,7 @@ import java.util.function.Function;
 /**
  * This class provides you with tools for calculations of rates of changes.
  *
- * @author Ethan Dagner
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
  * @author Artem Los (arteml@kth.se), Mathos Project.
  */
 public class DifferentialCalculus {

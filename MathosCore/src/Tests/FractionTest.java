@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import mathoscore.Arithmetic.Fraction;
 import org.junit.Test;

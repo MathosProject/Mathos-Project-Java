@@ -1,4 +1,4 @@
-package Tests.Postfix;
+package tests.Postfix;
 import mathoscore.Exceptions.InvalidExpressionException;
 import mathoscore.Exceptions.StackEmptyException;
 import static org.junit.Assert.*;

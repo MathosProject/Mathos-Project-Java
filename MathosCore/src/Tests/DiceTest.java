@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import mathoscore.Statistics.DiceSimulator;
 import org.junit.Test;

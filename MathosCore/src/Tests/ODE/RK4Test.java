@@ -1,6 +1,4 @@
-package Tests.ODE;
-
-import java.util.function.Function;
+package tests.ODE;
 
 import mathoscore.ODE.*;
 
