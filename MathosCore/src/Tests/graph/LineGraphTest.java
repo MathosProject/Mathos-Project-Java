@@ -14,7 +14,7 @@ public class LineGraphTest {
         List<Double> data = new ArrayList<>();
 
         for(int i = 0; i < 20; i++) {
-            data.add(random.nextDouble() * 50);
+            data.add(random.nextDouble() * 10);
         }
 
         Graph.graph(new LineGraph(640, 480, data));

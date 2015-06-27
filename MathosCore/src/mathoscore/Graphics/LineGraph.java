@@ -6,13 +6,18 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * A simple line graph.
+ *
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ */
 public class LineGraph extends Graph {
     public List<Double> data;
 
-    private int pointWidth = 4;
-    private int defaultPadding = 25;
-    private int labelPadding = 25;
-    private int numberYDivisions = 10;
+    public int pointWidth = 4;
+    public int defaultPadding = 25;
+    public int labelPadding = 25;
+    public int numberYDivisions = 10;
 
     private Color lineColor = new Color(44, 102, 230, 180);
     private Color pointColor = new Color(100, 100, 100, 180);
@@ -28,6 +33,18 @@ public class LineGraph extends Graph {
 
     public LineGraph(int width, int height, Double[] data) {
         this(width, height, Arrays.asList(data));
+    }
+
+    public LineGraph(int width, int height, double[] data) {
+        super(width, height);
+
+        List<Double> realData = new ArrayList<>();
+
+        for(double item : data) {
+            realData.add(item);
+        }
+
+        this.data = realData;
     }
 
     public double max() {
@@ -122,9 +139,9 @@ public class LineGraph extends Graph {
         g.setStroke(oldStroke);
         g.setColor(pointColor);
 
-        for(int i = 0; i < graphPoints.size(); i++) {
-            int x = graphPoints.get(i).x - pointWidth / 2;
-            int y = graphPoints.get(i).y - pointWidth / 2;
+        for (Point graphPoint : graphPoints) {
+            int x = graphPoint.x - pointWidth / 2;
+            int y = graphPoint.y - pointWidth / 2;
 
             g.fillOval(x, y, pointWidth, pointWidth);
         }

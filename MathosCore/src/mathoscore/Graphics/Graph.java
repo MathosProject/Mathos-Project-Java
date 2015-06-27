@@ -3,6 +3,12 @@ package mathoscore.graphics;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * The base class for creating graphs.
+ *
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ */
 public class Graph extends JPanel {
     public int width;
     public int height;
