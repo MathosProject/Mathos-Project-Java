@@ -1,7 +1,7 @@
-package tests.Chemistry;
+package tests.chemistry;
 
 import static org.junit.Assert.*;
-import mathoscore.Chemistry.Chemicals;
+import mathoscore.chemistry.Chemicals;
 
 import org.junit.Before;
 import org.junit.Test;

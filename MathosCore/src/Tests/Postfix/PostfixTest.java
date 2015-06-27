@@ -1,6 +1,7 @@
-package tests.Postfix;
-import mathoscore.Exceptions.InvalidExpressionException;
-import mathoscore.Exceptions.StackEmptyException;
+package tests.postfix;
+
+import mathoscore.exceptions.InvalidExpressionException;
+import mathoscore.exceptions.StackEmptyException;
 import static org.junit.Assert.*;
 
 import mathoscore.Postfix;

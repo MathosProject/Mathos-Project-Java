@@ -1,11 +1,9 @@
-package tests.Calculus;
+package tests.calculus;
 
-import mathoscore.Calculus.DifferentialCalculus;
-
-import org.junit.Assert;
 import org.junit.Test;
-
+import org.junit.Assert;
 import java.math.BigDecimal;
+import mathoscore.calculus.DifferentialCalculus;
 
 public class DifferentialCalculusTest {
 

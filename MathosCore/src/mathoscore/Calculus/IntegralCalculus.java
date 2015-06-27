@@ -1,4 +1,4 @@
-package mathoscore.Calculus;
+package mathoscore.calculus;
 
 import java.util.function.Function;
 
