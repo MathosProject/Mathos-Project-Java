@@ -3,6 +3,9 @@ package mathoscore.chemistry;
 import java.util.ArrayList;
 import java.util.Objects;
 
+/**
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ */
 public class Chemicals {
 	
 	// TODO instead, add a compound class.

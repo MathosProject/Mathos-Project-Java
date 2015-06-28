@@ -3,6 +3,11 @@ package mathoscore.statistics;
 import java.util.Date;
 import java.util.Random;
 
+/**
+ * Simulate dice rolls.
+ *
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ */
 public class DiceSimulator {
     private final int _numDice;
     private final int[] _nRolledValue;

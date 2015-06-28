@@ -11,10 +11,8 @@ import java.util.stream.Collectors;
  *  - Needs cartesian product.
  *  - Needs power set.
  *
- * @author Ethan Dagner
- *
  * @param <T> The type of elements that will be stored.
- * @version 2015.05.06
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
  */
 public class Set<T> {
     /**
@@ -105,7 +103,7 @@ public class Set<T> {
     }
 
     /**
-     * Get the union of this set and b.
+     * NumberUtility the union of this set and b.
      * @param b The second set
      * @return this ∪ b.
      */
@@ -120,7 +118,7 @@ public class Set<T> {
     }
 
     /**
-     * Get the intersection of this set and b.
+     * NumberUtility the intersection of this set and b.
      * @param b The second set.
      * @return this ∩ b.
      */
@@ -131,7 +129,7 @@ public class Set<T> {
     }
 
     /**
-     * Get the difference of this set and b.
+     * NumberUtility the difference of this set and b.
      * @param b The second set.
      * @return this \ b.
      */
@@ -142,7 +140,7 @@ public class Set<T> {
     }
 
     /**
-     * Get the symmetric difference of this set and b.
+     * NumberUtility the symmetric difference of this set and b.
      * @param b The second set.
      * @return Either (this △ b) or (this ⊖ b).
      */

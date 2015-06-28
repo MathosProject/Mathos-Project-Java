@@ -5,9 +5,9 @@ import java.math.BigInteger;
 /**
  * An integer object. Since Java's implementation of the Number interface is so retarded that it
  * doesn't have arithmetical functions you have to do it yourself.
+ *
  * @author Abdallah Hassan
  */
-
 public class Numint implements Arithmetical {
 	public BigInteger bi; // Holds the value of this Numint
 	

@@ -9,6 +9,7 @@ import java.io.StringWriter;
  * @author Artem Los (artem@artemlos.net)
  *
  * @param <T> The type to be stored in the stack.
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  * @version 2015.02.06
  */
 public class Stack<T> implements IStack<T>

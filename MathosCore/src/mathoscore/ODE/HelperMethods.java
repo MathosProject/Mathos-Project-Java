@@ -4,7 +4,6 @@ package mathoscore.ode;
  * A set of methods that can be useful when working with vectors.
  * 
  * @author Artem Los (arteml@kth.se), Mathos Project.
- *
  */
 public class HelperMethods {
 	// The methods below this line are here temporary. Better to put them into a different package for linear algebra operations

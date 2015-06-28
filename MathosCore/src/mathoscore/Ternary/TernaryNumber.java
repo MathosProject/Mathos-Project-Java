@@ -1,5 +1,8 @@
 package mathoscore.ternary;
 
+/**
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ */
 public class TernaryNumber {
 	
 	private Ternary[] value;

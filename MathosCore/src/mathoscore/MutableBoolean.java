@@ -3,6 +3,7 @@ package mathoscore;
 /**
  * A class that simulates a mutable boolean.
  *
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  */
 public class MutableBoolean {
 

@@ -2,6 +2,11 @@ package mathoscore.calculus;
 
 import mathoscore.arithmetic.DoubleArithmetic;
 
+/**
+ * Some helper methods for performing operations on doubles.
+ *
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ */
 public class ElementaryDouble {
 
     /**

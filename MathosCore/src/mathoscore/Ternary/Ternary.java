@@ -2,13 +2,15 @@ package mathoscore.ternary;
 
 /**
  * A class that simulates a ternary states (true - unknown - false).
+ *
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  */
 public enum Ternary {
 	TRUE(1), 
 	UNKNOWN(0),
 	FALSE(-1);
 	
-	private Ternary(int val) {}
+	Ternary(int val) {}
 	
 	/**
 	 * Converts a ternary object to a boolean (either "true" or "false"), without the "unknown" case.
@@ -28,7 +30,13 @@ public enum Ternary {
 	{
         return value ? TRUE : FALSE;
 	}
-	
+
+	/**
+	 * TRUE = 1,
+	 * UNKNOWN = 0,
+	 * FALSE = -1.
+	 * @return Returns a number based on the current value.
+	 */
 	public Number GetNumber()
 	{
 		switch (this) {

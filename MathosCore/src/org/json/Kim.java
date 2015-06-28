@@ -318,7 +318,7 @@ public class Kim {
     }
 
     /**
-     * Get a byte from a kim.
+     * NumberUtility a byte from a kim.
      * @param at
      *            The position of the byte. The first byte is at 0.
      * @return The byte.

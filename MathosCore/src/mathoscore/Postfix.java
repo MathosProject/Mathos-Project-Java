@@ -14,7 +14,7 @@ import mathoscore.exceptions.StackEmptyException;
  * operands and the four operators +, -, *, and /. Operators and operands must
  * be separated by whitespace.
  *
- * @author  Artem Los (artem@artemlos.net)
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  * @version 2015.02.06
  */
 public class Postfix {

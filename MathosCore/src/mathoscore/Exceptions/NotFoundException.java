@@ -1,5 +1,8 @@
 package mathoscore.exceptions;
 
+/**
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ */
 public class NotFoundException extends Exception
 {
 	public NotFoundException()

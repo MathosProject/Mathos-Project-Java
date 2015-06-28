@@ -2,6 +2,12 @@ package mathoscore;
 
 import java.math.BigDecimal;
 
+/**
+ * This class provides you with tools for performing operations with finance.
+ *
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ */
 public class Finance {
 
 	/**

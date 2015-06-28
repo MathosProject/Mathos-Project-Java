@@ -4,6 +4,11 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A complex number type.
+ *
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
+ */
 public class Complex {
     public double Real, Imaginary;
 

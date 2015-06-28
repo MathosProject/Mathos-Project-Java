@@ -2,6 +2,8 @@ package mathoscore.ode;
 
 /**
  * A Helper class for Solve function's function parameter.
+ *
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  */
 public class FunctionParameter {
 

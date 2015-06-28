@@ -1,11 +1,11 @@
 package mathoscore.arithmetic;
 
-import mathoscore.arithmetic.Numbers.Get;
+import mathoscore.NumberUtility;
 
 /**
- * A simple fraction type.
+ * A fraction type.
  *
- * @author Ethan Dagner
+ * @author Ethan Dagner (napen123@gmail.com), Mathos Project
  */
 public class Fraction {
     public long Numerator, Denominator;
@@ -64,7 +64,7 @@ public class Fraction {
      * @return Returns a simplified version of the current fraction.
      */
     public Fraction simplify() {
-        long gcm = Get.gcm(Numerator, Denominator);
+        long gcm = NumberUtility.gcm(Numerator, Denominator);
 
         return new Fraction(Numerator / gcm, Denominator / gcm);
     }
@@ -76,7 +76,7 @@ public class Fraction {
      * @return Returns the given fraction in simplified form.
      */
     public static Fraction simplify(long a, long b) {
-        long gcm = Get.gcm(a, b);
+        long gcm = NumberUtility.gcm(a, b);
 
         return new Fraction(a / gcm, b / gcm);
     }
@@ -91,7 +91,7 @@ public class Fraction {
     }
 
     /**
-     * Get decimal form.
+     * NumberUtility decimal form.
      * @return Returns the fraction in decimal form.
      */
     public double toDouble() {

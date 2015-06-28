@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * A simple line graph.
+ * A simple line graph for displaying either an array or list of numbers.
  *
  * @author Ethan Dagner (napen123@gmail.com), Mathos Project
  */

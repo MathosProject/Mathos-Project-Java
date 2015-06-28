@@ -2,9 +2,9 @@ package mathoscore.vectors;
 
 /**
  * A vector with a norm on it.
+
  * @author Abdallah Hassan
  */
-
 public interface NormedVector<T extends Arithmetical> extends AbstractVector<T> {
 	
 	/**

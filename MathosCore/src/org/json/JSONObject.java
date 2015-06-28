@@ -126,7 +126,7 @@ public class JSONObject {
         }
 
         /**
-         * Get the "null" string value.
+         * NumberUtility the "null" string value.
          *
          * @return The string "null".
          */
@@ -459,7 +459,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the value object associated with a key.
+     * NumberUtility the value object associated with a key.
      *
      * @param key
      *            A key string.
@@ -479,7 +479,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the boolean value associated with a key.
+     * NumberUtility the boolean value associated with a key.
      *
      * @param key
      *            A key string.
@@ -504,7 +504,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the double value associated with a key.
+     * NumberUtility the double value associated with a key.
      *
      * @param key
      *            A key string.
@@ -525,7 +525,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the int value associated with a key.
+     * NumberUtility the int value associated with a key.
      *
      * @param key
      *            A key string.
@@ -546,7 +546,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the JSONArray value associated with a key.
+     * NumberUtility the JSONArray value associated with a key.
      *
      * @param key
      *            A key string.
@@ -564,7 +564,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the JSONObject value associated with a key.
+     * NumberUtility the JSONObject value associated with a key.
      *
      * @param key
      *            A key string.
@@ -582,7 +582,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the long value associated with a key.
+     * NumberUtility the long value associated with a key.
      *
      * @param key
      *            A key string.
@@ -603,7 +603,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an array of field names from a JSONObject.
+     * NumberUtility an array of field names from a JSONObject.
      *
      * @return An array of field names, or null if there are no names.
      */
@@ -623,7 +623,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an array of field names from an Object.
+     * NumberUtility an array of field names from an Object.
      *
      * @return An array of field names, or null if there are no names.
      */
@@ -645,7 +645,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the string associated with a key.
+     * NumberUtility the string associated with a key.
      *
      * @param key
      *            A key string.
@@ -716,7 +716,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an enumeration of the keys of the JSONObject.
+     * NumberUtility an enumeration of the keys of the JSONObject.
      *
      * @return An iterator of the keys.
      */
@@ -725,7 +725,7 @@ public class JSONObject {
     }
 
     /**
-     * Get a set of keys of the JSONObject.
+     * NumberUtility a set of keys of the JSONObject.
      *
      * @return A keySet.
      */
@@ -734,7 +734,7 @@ public class JSONObject {
     }
 
     /**
-     * Get the number of keys stored in the JSONObject.
+     * NumberUtility the number of keys stored in the JSONObject.
      *
      * @return The number of keys in the JSONObject.
      */
@@ -789,7 +789,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional value associated with a key.
+     * NumberUtility an optional value associated with a key.
      *
      * @param key
      *            A key string.
@@ -800,7 +800,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional boolean associated with a key. It returns false if there
+     * NumberUtility an optional boolean associated with a key. It returns false if there
      * is no such key, or if the value is not Boolean.TRUE or the String "true".
      *
      * @param key
@@ -812,7 +812,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional boolean associated with a key. It returns the
+     * NumberUtility an optional boolean associated with a key. It returns the
      * defaultValue if there is no such key, or if it is not a Boolean or the
      * String "true" or "false" (case insensitive).
      *
@@ -831,7 +831,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional double associated with a key, or NaN if there is no such
+     * NumberUtility an optional double associated with a key, or NaN if there is no such
      * key or if its value is not a number. If the value is a string, an attempt
      * will be made to evaluate it as a number.
      *
@@ -844,7 +844,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional double associated with a key, or the defaultValue if
+     * NumberUtility an optional double associated with a key, or the defaultValue if
      * there is no such key or if its value is not a number. If the value is a
      * string, an attempt will be made to evaluate it as a number.
      *
@@ -863,7 +863,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional int value associated with a key, or zero if there is no
+     * NumberUtility an optional int value associated with a key, or zero if there is no
      * such key or if the value is not a number. If the value is a string, an
      * attempt will be made to evaluate it as a number.
      *
@@ -876,7 +876,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional int value associated with a key, or the default if there
+     * NumberUtility an optional int value associated with a key, or the default if there
      * is no such key or if the value is not a number. If the value is a string,
      * an attempt will be made to evaluate it as a number.
      *
@@ -895,7 +895,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional JSONArray associated with a key. It returns null if there
+     * NumberUtility an optional JSONArray associated with a key. It returns null if there
      * is no such key, or if its value is not a JSONArray.
      *
      * @param key
@@ -908,7 +908,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional JSONObject associated with a key. It returns null if
+     * NumberUtility an optional JSONObject associated with a key. It returns null if
      * there is no such key, or if its value is not a JSONObject.
      *
      * @param key
@@ -921,7 +921,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional long value associated with a key, or zero if there is no
+     * NumberUtility an optional long value associated with a key, or zero if there is no
      * such key or if the value is not a number. If the value is a string, an
      * attempt will be made to evaluate it as a number.
      *
@@ -934,7 +934,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional long value associated with a key, or the default if there
+     * NumberUtility an optional long value associated with a key, or the default if there
      * is no such key or if the value is not a number. If the value is a string,
      * an attempt will be made to evaluate it as a number.
      *
@@ -953,7 +953,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional string associated with a key. It returns an empty string
+     * NumberUtility an optional string associated with a key. It returns an empty string
      * if there is no such key. If the value is not a string and is not null,
      * then it is converted to a string.
      *
@@ -966,7 +966,7 @@ public class JSONObject {
     }
 
     /**
-     * Get an optional string associated with a key. It returns the defaultValue
+     * NumberUtility an optional string associated with a key. It returns the defaultValue
      * if there is no such key.
      *
      * @param key

@@ -7,6 +7,7 @@ import mathoscore.exceptions.NotFoundException;
 /**
  * A class that stores a function that takes in and returns a double. In addition, the function has a set boundary.
  *
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  */
 public final class SingleVariableFunction {
 	private final Function<Double,Double> function;

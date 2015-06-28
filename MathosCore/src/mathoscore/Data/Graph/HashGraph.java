@@ -11,7 +11,7 @@ import java.util.Set;
  * Space complexity is &Theta;(n + m) where n is the number of vertices and m
  * the number of edges.
  * 
- * @author Artem Los
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  * @version 2015.04.24
  */
 public class HashGraph implements Graph {

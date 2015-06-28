@@ -180,7 +180,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the object value associated with an index.
+     * NumberUtility the object value associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -197,7 +197,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the boolean value associated with an index. The string values "true"
+     * NumberUtility the boolean value associated with an index. The string values "true"
      * and "false" are converted to boolean.
      *
      * @param index
@@ -222,7 +222,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the double value associated with an index.
+     * NumberUtility the double value associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -242,7 +242,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the int value associated with an index.
+     * NumberUtility the int value associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -261,7 +261,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the JSONArray associated with an index.
+     * NumberUtility the JSONArray associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -279,7 +279,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the JSONObject associated with an index.
+     * NumberUtility the JSONObject associated with an index.
      *
      * @param index
      *            subscript
@@ -297,7 +297,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the long value associated with an index.
+     * NumberUtility the long value associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -317,7 +317,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the string associated with an index.
+     * NumberUtility the string associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -369,7 +369,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the number of elements in the JSONArray, included nulls.
+     * NumberUtility the number of elements in the JSONArray, included nulls.
      *
      * @return The length (or size).
      */
@@ -378,7 +378,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional object value associated with an index.
+     * NumberUtility the optional object value associated with an index.
      *
      * @param index
      *            The index must be between 0 and length() - 1.
@@ -390,7 +390,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional boolean value associated with an index. It returns false
+     * NumberUtility the optional boolean value associated with an index. It returns false
      * if there is no value at that index, or if the value is not Boolean.TRUE
      * or the String "true".
      *
@@ -403,7 +403,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional boolean value associated with an index. It returns the
+     * NumberUtility the optional boolean value associated with an index. It returns the
      * defaultValue if there is no value at that index or if it is not a Boolean
      * or the String "true" or "false" (case insensitive).
      *
@@ -422,7 +422,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional double value associated with an index. NaN is returned
+     * NumberUtility the optional double value associated with an index. NaN is returned
      * if there is no value for the index, or if the value is not a number and
      * cannot be converted to a number.
      *
@@ -435,7 +435,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional double value associated with an index. The defaultValue
+     * NumberUtility the optional double value associated with an index. The defaultValue
      * is returned if there is no value for the index, or if the value is not a
      * number and cannot be converted to a number.
      *
@@ -454,7 +454,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional int value associated with an index. Zero is returned if
+     * NumberUtility the optional int value associated with an index. Zero is returned if
      * there is no value for the index, or if the value is not a number and
      * cannot be converted to a number.
      *
@@ -467,7 +467,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional int value associated with an index. The defaultValue is
+     * NumberUtility the optional int value associated with an index. The defaultValue is
      * returned if there is no value for the index, or if the value is not a
      * number and cannot be converted to a number.
      *
@@ -486,7 +486,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional JSONArray associated with an index.
+     * NumberUtility the optional JSONArray associated with an index.
      *
      * @param index
      *            subscript
@@ -499,7 +499,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional JSONObject associated with an index. Null is returned if
+     * NumberUtility the optional JSONObject associated with an index. Null is returned if
      * the key is not found, or null if the index has no value, or if the value
      * is not a JSONObject.
      *
@@ -513,7 +513,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional long value associated with an index. Zero is returned if
+     * NumberUtility the optional long value associated with an index. Zero is returned if
      * there is no value for the index, or if the value is not a number and
      * cannot be converted to a number.
      *
@@ -526,7 +526,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional long value associated with an index. The defaultValue is
+     * NumberUtility the optional long value associated with an index. The defaultValue is
      * returned if there is no value for the index, or if the value is not a
      * number and cannot be converted to a number.
      *
@@ -545,7 +545,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional string value associated with an index. It returns an
+     * NumberUtility the optional string value associated with an index. It returns an
      * empty string if there is no value at that index. If the value is not a
      * string and is not null, then it is coverted to a string.
      *
@@ -558,7 +558,7 @@ public class JSONArray {
     }
 
     /**
-     * Get the optional string associated with an index. The defaultValue is
+     * NumberUtility the optional string associated with an index. The defaultValue is
      * returned if the key is not found.
      *
      * @param index

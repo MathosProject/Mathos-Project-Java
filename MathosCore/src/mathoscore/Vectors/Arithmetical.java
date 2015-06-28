@@ -3,9 +3,9 @@ package mathoscore.vectors;
 /**
  * This interface will define an "arithmetical" object like a number or a matrix
  * where the standard arithmetical operations are defined.
+ *
  * @author Abdallah Hassan
  */
-
 public interface Arithmetical extends AdditiveElement {
 	
 	/**

@@ -4,8 +4,8 @@ import java.util.function.Function;
 
 /**
  * A class that focuses on solving the equation f(x) = 0, i.e. finding the roots of f(x).
- * @author Artem Los (arteml@kth.se), Mathos Project
  *
+ * @author Artem Los (arteml@kth.se), Mathos Project
  */
 public class Solve {
 	

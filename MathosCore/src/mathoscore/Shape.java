@@ -2,15 +2,13 @@ package mathoscore;
 
 import java.util.HashSet;
 
+/**
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ */
 public class Shape {
 	//note, Doubles are mutable below.
 	private HashSet<SingleVariableFunction> yFunctions;
 	private HashSet<SingleVariableFunction> xFunctions;
-	
-	public Shape()
-	{
-		
-	}
 	
 	/**
 	 * Sets the Y functions

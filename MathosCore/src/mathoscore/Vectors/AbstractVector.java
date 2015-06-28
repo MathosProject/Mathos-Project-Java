@@ -2,12 +2,12 @@ package mathoscore.vectors;
 
 /**
  * This interface will define a type of mathematical vector element, where
- * <T> is the type of scalars.
- * This interface should be implemented in such a way to uphold the axioms of
+ * this interface should be implemented in such a way to uphold the axioms of
  * vector spaces.
+ *
+ * @param <T> The type of scalars.
  * @author Abdallah Hassan
  */
-
 public interface AbstractVector<T extends Arithmetical> extends AdditiveElement {
 	
 	/**
@@ -40,5 +40,4 @@ public interface AbstractVector<T extends Arithmetical> extends AdditiveElement 
 	 * @return The zero element of the scalar set
 	 */
 	T zeroScalar();
-
 }

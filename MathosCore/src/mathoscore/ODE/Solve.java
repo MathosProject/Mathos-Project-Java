@@ -2,6 +2,9 @@ package mathoscore.ode;
 
 import java.util.function.Function;
 
+/**
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ */
 public class Solve {
 
 	/**

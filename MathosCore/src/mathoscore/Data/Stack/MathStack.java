@@ -4,9 +4,9 @@ import mathoscore.exceptions.StackEmptyException;
 
 /**
  * A stack that can only contain integers. This is an extension of stack class. All methods have the time complexity of O(1).
- * @author Artem Los (artem@artemlos.net)
- * @version 2015.02.06
  *
+ * @author Artem Los (arteml@kth.se), Mathos Project.
+ * @version 2015.02.06
  */
 public class MathStack extends Stack<Integer> {
 

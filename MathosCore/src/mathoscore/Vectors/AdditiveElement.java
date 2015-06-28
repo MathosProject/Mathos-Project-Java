@@ -3,9 +3,9 @@ package mathoscore.vectors;
 /**
  * This interface will define a mathematical object where addition is defined and is commutative, 
  * associative and has an identity element and an inverse operation (subtraction).
+ *
  * @author Abdallah Hassan
  */
-
 public interface AdditiveElement {
 	
 	/**

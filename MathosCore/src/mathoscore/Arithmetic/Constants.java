@@ -1,7 +1,7 @@
 package mathoscore.arithmetic;
 
 /**
- * This class provides numberous mathematical constants.
+ * This class provides numerous mathematical constants.
  *
  * @author Ethan Dagner (napen123@gmail.com), Mathos Project
  */

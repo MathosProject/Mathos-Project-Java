@@ -3,10 +3,10 @@ package mathoscore.data.stack;
 import mathoscore.exceptions.StackEmptyException;
 
 /**
- * A stack data structure that has O(1) time complexity on all methods.  
- * @author Artem Los (artem@artemlos.net)
+ * A stack data structure that has O(1) time complexity on all methods.
  *
  * @param <T> The type to be stored in the stack.
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  * @version 2015.02.06
  */
 public interface IStack<T> {

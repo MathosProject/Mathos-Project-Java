@@ -5,7 +5,7 @@ import java.io.StringWriter;
 /**
  * A singly linked list.
  * 
- * @author Artem Los (artem@artemlos.net)
+ * @author Artem Los (arteml@kth.se), Mathos Project.
  * @version 2015.02.06
  */
 public class LinkedList<T> { 
