@@ -1,11 +1,7 @@
-Mathos Core
-==========
+#Mathos Core
+## About
+Mathos is a collection of tools for any kinds of mathematical calculations. It allows you to work with shapes, finance, unit conversions, and more!
 
-This is the java version of Mathos Core. The .NET version is located here: http://mathos.codeplex.com/. 
+This is a port of the original [project](https://github.com/MathosProject/Mathos-Project).
 
-###Help
-* [http://mathosproject.github.io/MathosCore/Javadoc/](http://mathosproject.github.io/MathosCore/Javadoc/)
-* [http://support.mathosproject.com/](http://support.mathosproject.com/)
-
-Other projects:
-* Mathos Parser (https://github.com/MathosProject/Mathos-Parser)
+**Documentation: http://mathosproject.github.io/MathosCore/Javadoc/**
