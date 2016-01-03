@@ -1,4 +1,4 @@
-package mathoscore.arithmetic;
+package mathoscore;
 
 /**
  * This class provides numerous mathematical constants.
