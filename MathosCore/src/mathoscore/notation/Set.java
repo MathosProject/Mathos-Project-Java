@@ -1,4 +1,4 @@
-package mathoscore.data.set;
+package mathoscore.notation;
 
 import java.util.*;
 import java.util.function.Predicate;
