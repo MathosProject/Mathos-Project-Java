@@ -5,4 +5,4 @@ This is the Java version of the [original project](https://github.com/MathosProj
 ## About the Mathos Project
 Mathos is a collection of tools for any kinds of mathematical calculations. It allows you to work with shapes, finance, unit conversions, and more!
 
-**Documentation: http://mathosproject.github.io/MathosCore/Javadoc/**
+**Documentation: http://mathosproject.github.io/Mathos-Project-Java/Javadoc/**
