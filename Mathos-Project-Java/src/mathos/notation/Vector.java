@@ -106,6 +106,6 @@ public class Vector {
     
     @Override
     public int hashCode() {
-    	return _vectorContent.hashCode();
+    	return Arrays.hashCode(_vectorContent);
     }
 }

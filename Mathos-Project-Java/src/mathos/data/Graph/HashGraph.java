@@ -6,6 +6,8 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
+import static mathos.data.graph.Graph.NO_COST;
+
 /**
  * A graph with a fixed number of vertices implemented using adjacency maps.
  * Space complexity is &Theta;(n + m) where n is the number of vertices and m
@@ -157,18 +159,10 @@ public class HashGraph implements Graph {
 		// TODO
 		vBound(v);
 		vBound(w);
-		
+
 		Map<Integer, Integer> obj = edges[v];
-		
-		if(obj == null)
-			return false;
-		else
-		{
-			if(obj.containsKey(w))
-				return true;
-			else
-				return false;
-		}
+
+		return obj != null && obj.containsKey(w);
 	}
 
 	/**
