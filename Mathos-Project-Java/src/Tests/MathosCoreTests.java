@@ -1,7 +1,7 @@
 package tests;
 
-import mathoscore.Shape;
-import mathoscore.SingleVariableFunction;
+import mathos.Shape;
+import mathos.SingleVariableFunction;
 import org.junit.Test;
 
 import java.util.HashSet;

@@ -1,6 +1,6 @@
 package tests.ode;
 
-import mathoscore.ode.*;
+import mathos.ode.*;
 
 import org.junit.Test;
 

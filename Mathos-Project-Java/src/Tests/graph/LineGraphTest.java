@@ -1,7 +1,7 @@
 package tests.graph;
 
-import mathoscore.graphics.Graph;
-import mathoscore.graphics.LineGraph;
+import mathos.graphics.Graph;
+import mathos.graphics.LineGraph;
 
 import java.util.ArrayList;
 import java.util.List;

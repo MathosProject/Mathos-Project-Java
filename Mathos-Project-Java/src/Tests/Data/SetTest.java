@@ -1,6 +1,6 @@
 package tests.data;
 
-import mathoscore.notation.Set;
+import mathos.notation.Set;
 import org.junit.Test;
 
 public class SetTest {

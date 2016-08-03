@@ -1,7 +1,7 @@
 package tests.data;
 
 import static org.junit.Assert.*;
-import mathoscore.data.linkedlist.LinkedList;
+import mathos.data.linkedlist.LinkedList;
 
 import org.junit.After;
 import org.junit.Before;

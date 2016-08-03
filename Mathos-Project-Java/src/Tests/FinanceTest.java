@@ -1,6 +1,6 @@
 package tests;
 
-import mathoscore.Finance;
+import mathos.Finance;
 import org.junit.Test;
 
 import java.math.BigDecimal;

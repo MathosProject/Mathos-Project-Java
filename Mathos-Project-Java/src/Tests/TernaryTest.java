@@ -1,7 +1,7 @@
 package tests;
 
 import org.junit.Assert;
-import mathoscore.ternary.Ternary;
+import mathos.ternary.Ternary;
 import org.junit.Test;
 
 public class TernaryTest {

@@ -3,7 +3,7 @@ package tests.calculus;
 import org.junit.Test;
 import org.junit.Assert;
 import java.math.BigDecimal;
-import mathoscore.calculus.DifferentialCalculus;
+import mathos.calculus.DifferentialCalculus;
 
 public class DifferentialCalculusTest {
 

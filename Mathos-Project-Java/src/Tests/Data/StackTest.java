@@ -1,9 +1,9 @@
 package tests.data;
 
 import static org.junit.Assert.*;
-import mathoscore.data.stack.MathStack;
-import mathoscore.data.stack.Stack;
-import mathoscore.exceptions.StackEmptyException;
+import mathos.data.stack.MathStack;
+import mathos.data.stack.Stack;
+import mathos.exceptions.StackEmptyException;
 
 import org.junit.Test;
 

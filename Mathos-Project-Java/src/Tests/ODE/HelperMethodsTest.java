@@ -1,6 +1,6 @@
 package tests.ode;
 
-import mathoscore.ode.HelperMethods;
+import mathos.ode.HelperMethods;
 
 import org.junit.Test;
 

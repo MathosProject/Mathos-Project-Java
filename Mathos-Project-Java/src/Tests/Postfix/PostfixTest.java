@@ -1,10 +1,10 @@
 package tests.postfix;
 
-import mathoscore.exceptions.InvalidExpressionException;
-import mathoscore.exceptions.StackEmptyException;
+import mathos.exceptions.InvalidExpressionException;
+import mathos.exceptions.StackEmptyException;
 import static org.junit.Assert.*;
 
-import mathoscore.Postfix;
+import mathos.Postfix;
 import org.junit.Test;
 
 public class PostfixTest {

@@ -6,7 +6,7 @@ import java.util.function.Function;
 
 import org.junit.Test;
 
-import mathoscore.equationsolver.Solve;
+import mathos.equationsolver.Solve;
 
 public class SecantMethodTest {
 

@@ -1,6 +1,6 @@
 package tests;
 
-import mathoscore.arithmetic.Fraction;
+import mathos.arithmetic.Fraction;
 import org.junit.Test;
 
 public class FractionTest {

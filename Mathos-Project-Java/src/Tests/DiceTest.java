@@ -1,6 +1,6 @@
 package tests;
 
-import mathoscore.statistics.DiceSimulator;
+import mathos.statistics.DiceSimulator;
 import org.junit.Test;
 
 public class DiceTest {

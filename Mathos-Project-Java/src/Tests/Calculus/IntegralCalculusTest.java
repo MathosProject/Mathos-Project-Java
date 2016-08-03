@@ -1,7 +1,7 @@
 package tests.calculus;
 
 import org.junit.Test;
-import mathoscore.calculus.IntegralCalculus;
+import mathos.calculus.IntegralCalculus;
 
 public class IntegralCalculusTest {
 
